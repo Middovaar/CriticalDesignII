@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://njta5a02wr31"]
+
+[ext_resource type="Script" uid="uid://gpt8sha6fvf7" path="res://Scripts/global_text_handler.gd" id="1_epypp"]
+[ext_resource type="FontFile" uid="uid://clx1w8wbh0sce" path="res://VCREAS 3.0.ttf" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://drowiaolajpl0" path="res://BBTools/TextBlinker.gd" id="3_0hol4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r0du0"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Outfits",
+"speed": 0.0
+}]
+
+[sub_resource type="Theme" id="Theme_0e48y"]
+default_font = ExtResource("1_wtcfe")
+default_font_size = 30
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_q6r6c"]
+script = ExtResource("3_0hol4")
+metadata/_custom_type_script = "uid://drowiaolajpl0"
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+
+[node name="Character" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r0du0")
+animation = &"Outfits"
+
+[node name="TextHandler" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_epypp")
+
+[node name="Dialogue" type="Control" parent="TextHandler"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -576.5
+offset_top = -118.0
+offset_right = 576.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TextBox" type="RichTextLabel" parent="TextHandler/Dialogue"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 111.5
+offset_right = -111.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_0e48y")
+bbcode_enabled = true
+text = "[bgcolor=black][center][color=#afafaf][ Space ]  "
+horizontal_alignment = 1
+custom_effects = [SubResource("RichTextEffect_q6r6c")]
+
+[node name="Space" type="RichTextLabel" parent="TextHandler/Dialogue"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 111.5
+offset_top = 59.0
+offset_right = -111.5
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_0e48y")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[bgcolor=black][center][color=#afafaf][blinky speed=4 minimums=0.55][ Space ]  [/blinky]"
+horizontal_alignment = 1
+custom_effects = [SubResource("RichTextEffect_q6r6c")]

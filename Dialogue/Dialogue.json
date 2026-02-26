@@ -1,0 +1,39 @@
+{
+	"DressupDebug": {
+		"Text": ["[bgcolor=black][center]Hey ", "chat", "!"],
+		"Description": "Triggered after getting off the car (At the start of the game)",
+		"Item": 0
+	},
+	"Dressup2": {
+		"Text": ["[bgcolor=black][center]…yes,", "yes, ", "this ", "is ", "the ", "livestream ", "feed", "."],
+		"Item": 0
+	},
+	"Dressup3": {
+		"Text": ["[bgcolor=black][center]No “, “other “, “cars “, “out “, “here, “, “looks “, “like “, “I'm “, “the “, “only “, “guest."],
+		"Item": 0
+	},
+	"Dressup4": {
+		"Text": ["[bgcolor=black][center]Perfect! “, “I “, “love “, “being “, “the “, “lone “, “wolf."],
+		"Item": 0
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
