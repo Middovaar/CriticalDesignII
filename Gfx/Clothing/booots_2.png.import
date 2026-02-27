@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxgjlxym8vvj3"
-path="res://.godot/imported/icon.svg-8d533b49e08800d049cf252fe12ad1fe.ctex"
+uid="uid://bbyhgafmr0nyk"
+path="res://.godot/imported/booots_2.png-3eda4d254e2542a4bda60ea4b9f068ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Gfx/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-8d533b49e08800d049cf252fe12ad1fe.ctex"]
+source_file="res://Gfx/Clothing/booots_2.png"
+dest_files=["res://.godot/imported/booots_2.png-3eda4d254e2542a4bda60ea4b9f068ce.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

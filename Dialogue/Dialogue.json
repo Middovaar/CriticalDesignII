@@ -1,31 +1,30 @@
 {
-	"DressupDebug": {
-		"Text": ["[bgcolor=black][center]Hey ", "chat", "!"],
+	"DressupStart": {
+		"A": ["[bgcolor=9f4178][center][color=#ffffff]Hi ", "everyone", "!~"],
+		"B": ["[bgcolor=9f4178][center][color=#ffffff]Wel", "come ", "to ", "my ", "dream ", "house ", "~"],
+		"C": ["[bgcolor=9f4178][center][color=#ffffff]You ", "know, ", "I ", "am ", "in ", "a ", "bit ", "of ", "a ", "pickle", ".", ".", "."],
+		"D": ["[bgcolor=9f4178][center][color=#ffffff]I ", "have ", "this ", "very ", "important ", "meeting, ", "but-"],
+		"E": ["[shake rate=20.0 level=5 connected=1][bgcolor=9f4178][center][color=#ffffff]I ", "can't ", "figure ", "out ", "what ", "clothes ", "to ", "wear!"],
+		"F": ["[bgcolor=9f4178][center][color=#ffffff]*", "sigh", "*"],
+		"G": ["[bgcolor=9f4178][center][color=#ffffff]Could ", "you ", "help ", "me", "?"],
+		
 		"Description": "Triggered after getting off the car (At the start of the game)",
-		"Item": 0
-	},
-	"Dressup2": {
-		"Text": ["[bgcolor=black][center]…yes,", "yes, ", "this ", "is ", "the ", "livestream ", "feed", "."],
-		"Item": 0
-	},
-	"Dressup3": {
-		"Text": ["[bgcolor=black][center]No “, “other “, “cars “, “out “, “here, “, “looks “, “like “, “I'm “, “the “, “only “, “guest."],
-		"Item": 0
-	},
-	"Dressup4": {
-		"Text": ["[bgcolor=black][center]Perfect! “, “I “, “love “, “being “, “the “, “lone “, “wolf."],
-		"Item": 0
+		"Items": 7
 	},
 	
+	"DressupHair": {
+		"A": ["[bgcolor=9f4178][center][color=#ffffff]Oooh ", "~"],
+		
+		"Description": "Triggered after getting off the car (At the start of the game)",
+		"Items": 1
+	},
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	"DressupEnd": {
+		"A": ["[bgcolor=9f4178][center][color=#ffffff]Thank ", "You!"],
+		
+		"Description": "Triggered after getting off the car (At the start of the game)",
+		"Items": 1
+	}
 	
 	
 	

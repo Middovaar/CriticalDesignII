@@ -1,20 +1,71 @@
-[gd_scene load_steps=7 format=3 uid="uid://njta5a02wr31"]
+[gd_scene load_steps=42 format=3 uid="uid://njta5a02wr31"]
 
+[ext_resource type="Texture2D" uid="uid://jl32yxf5fqoy" path="res://Gfx/background1.png" id="1_c6i3y"]
 [ext_resource type="Script" uid="uid://gpt8sha6fvf7" path="res://Scripts/global_text_handler.gd" id="1_epypp"]
 [ext_resource type="FontFile" uid="uid://clx1w8wbh0sce" path="res://VCREAS 3.0.ttf" id="1_wtcfe"]
 [ext_resource type="Script" uid="uid://drowiaolajpl0" path="res://BBTools/TextBlinker.gd" id="3_0hol4"]
+[ext_resource type="Theme" uid="uid://okn3pmc1co4r" path="res://Theme.tres" id="3_5tuhn"]
+[ext_resource type="Texture2D" uid="uid://csmgo87lrhtra" path="res://Gfx/Humans/man1.png" id="4_3dxm6"]
+[ext_resource type="Script" uid="uid://bgnfs7fx6k05x" path="res://Scripts/character.gd" id="4_trn2v"]
+[ext_resource type="Texture2D" uid="uid://1iywkmwehv02" path="res://Gfx/Hair/blonde_hair.png" id="5_2gh4u"]
+[ext_resource type="Texture2D" uid="uid://c3hduadakt6t6" path="res://Gfx/Humans/man2.png" id="5_lgr22"]
+[ext_resource type="Script" uid="uid://cymx3ji836e5k" path="res://Scripts/WardrobeButtons.gd" id="6_devvj"]
+[ext_resource type="Texture2D" uid="uid://dsycot62s4inh" path="res://Gfx/Humans/man3.png" id="6_trn2v"]
+[ext_resource type="Texture2D" uid="uid://0on3fls0mkef" path="res://Gfx/Hair/brown_hair.png" id="7_3b0ty"]
+[ext_resource type="Texture2D" uid="uid://cir5ym7f5fr2n" path="res://Gfx/TITLE.png" id="8_03owx"]
+[ext_resource type="Texture2D" uid="uid://c1rl6vu81pdxc" path="res://Gfx/Hair/curly_hair.png" id="8_bg4s2"]
+[ext_resource type="Script" uid="uid://ufk11gjhbegp" path="res://Scripts/CharacterSelectionGuides.gd" id="8_wkp8b"]
+[ext_resource type="Texture2D" uid="uid://ck3f74y3cjkin" path="res://Gfx/Hair/hair_red_.png" id="9_hhcpw"]
+[ext_resource type="Script" uid="uid://cy2u8gqyiu1kw" path="res://Scripts/DialogueSpaceInput.gd" id="9_wkp8b"]
+[ext_resource type="Script" uid="uid://c7w5nv6rkytfj" path="res://titletag.gd" id="10_20pc6"]
+[ext_resource type="Texture2D" uid="uid://cc12sr4ns4drr" path="res://Gfx/anchors.png" id="13_c2ibq"]
+[ext_resource type="Texture2D" uid="uid://5k33jn84oa63" path="res://Gfx/Clothing/top_1.png" id="16_bg4s2"]
+[ext_resource type="Texture2D" uid="uid://btn7hn577r54o" path="res://Gfx/Clothing/pantss.png" id="16_oye8v"]
+[ext_resource type="Texture2D" uid="uid://bwtljpie2w7r5" path="res://Gfx/Clothing/pants2.png" id="17_40n85"]
+[ext_resource type="Texture2D" uid="uid://c0npfvpo7q3xo" path="res://Gfx/Clothing/top_2.png" id="17_hhcpw"]
+[ext_resource type="Texture2D" uid="uid://co5e4kl04u8ug" path="res://Gfx/Clothing/skirt.png" id="18_gb15f"]
+[ext_resource type="Texture2D" uid="uid://q0siojxgpfj" path="res://Gfx/Clothing/top_3.png" id="18_mxvw5"]
+[ext_resource type="Texture2D" uid="uid://l5l4al38426y" path="res://Gfx/Clothing/skirt_2.png" id="19_sph85"]
+[ext_resource type="Texture2D" uid="uid://bl3qd864hbo0x" path="res://Gfx/Clothing/top_4.png" id="19_xrxkg"]
+[ext_resource type="Texture2D" uid="uid://bbyhgafmr0nyk" path="res://Gfx/Clothing/booots_2.png" id="20_o7g6l"]
+[ext_resource type="Texture2D" uid="uid://bbkwjvxim47je" path="res://Gfx/Clothing/boooots.png" id="21_vi5kq"]
+[ext_resource type="Texture2D" uid="uid://b556sf5lllyr2" path="res://Gfx/Clothing/boots_3.png" id="22_5mkgo"]
+[ext_resource type="Texture2D" uid="uid://dhyjfy1ssepau" path="res://Gfx/Clothing/shoes.png" id="23_3ccbu"]
+[ext_resource type="Texture2D" uid="uid://b1sgw2n0v4oxf" path="res://Gfx/Clothing/acc.png" id="24_sph85"]
+[ext_resource type="Texture2D" uid="uid://bse024nwtb3o7" path="res://Gfx/Clothing/acc_2.png" id="25_o7g6l"]
+[ext_resource type="Texture2D" uid="uid://ctywwwdqejjpt" path="res://Gfx/Clothing/earings.png" id="26_vi5kq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wkp8b"]
+size = Vector2(654.00006, 78.000015)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tuhn"]
+bg_color = Color(0.6, 0.6, 0.6, 0.11372549)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2gh4u"]
+bg_color = Color(0.6, 0.6, 0.6, 0.11372549)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_devvj"]
+bg_color = Color(0.6, 0.6, 0.6, 0.11372549)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3b0ty"]
+bg_color = Color(0.6, 0.6, 0.6, 0.11372549)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r0du0"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_lgr22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_trn2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3dxm6")
+}],
 "loop": true,
-"name": &"Outfits",
+"name": &"Bases",
 "speed": 0.0
 }]
-
-[sub_resource type="Theme" id="Theme_0e48y"]
-default_font = ExtResource("1_wtcfe")
-default_font_size = 30
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_q6r6c"]
 script = ExtResource("3_0hol4")
@@ -22,18 +73,712 @@ metadata/_custom_type_script = "uid://drowiaolajpl0"
 
 [node name="Main" type="Node2D"]
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Background1" type="Sprite2D" parent="."]
+position = Vector2(1305.0001, 521.00006)
+scale = Vector2(1.3759711, 1.034467)
+texture = ExtResource("1_c6i3y")
+metadata/_edit_lock_ = true
+
+[node name="Title" type="RigidBody2D" parent="."]
+position = Vector2(1.8189894e-12, 4.5474735e-13)
+scale = Vector2(0.99999994, 0.99999994)
+gravity_scale = -1.0
+center_of_mass_mode = 1
+center_of_mass = Vector2(-432.85, 0)
+inertia = 0.93
+freeze = true
+script = ExtResource("10_20pc6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Title"]
+position = Vector2(432.99994, 121.99998)
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_wkp8b")
+
+[node name="Sprite" type="Sprite2D" parent="Title"]
+position = Vector2(466.99997, 126.99999)
+scale = Vector2(0.59453785, 0.59453785)
+texture = ExtResource("8_03owx")
+
+[node name="Anchor1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(400, 566)
+texture = ExtResource("13_c2ibq")
+
+[node name="Anchor2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(970, 566)
+texture = ExtResource("13_c2ibq")
+
+[node name="AnchorWardrobeOut" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(2100, 566)
+texture = ExtResource("13_c2ibq")
+
+[node name="AnchorWardrobe" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(828, 566)
+texture = ExtResource("13_c2ibq")
+
+[node name="Wardrobe" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2100.0
+offset_right = 3213.0015
+offset_bottom = 1079.0
+grow_vertical = 2
+
+[node name="TextureHind" type="Sprite2D" parent="Wardrobe"]
+position = Vector2(149.915, 540)
+scale = Vector2(111.4, 108.000015)
+texture = ExtResource("13_c2ibq")
+offset = Vector2(3.65, 0)
+
+[node name="Category" type="RichTextLabel" parent="Wardrobe"]
+layout_mode = 0
+offset_top = 18.0
+offset_right = 1114.0
+offset_bottom = 751.0
+theme = ExtResource("3_5tuhn")
+theme_override_fonts/normal_font = ExtResource("1_wtcfe")
+bbcode_enabled = true
+text = "[center]Hair
+
+
+
+
+
+
+
+
+
+ [color=ef258f]Red     [color=7f7f7f] Black    [color=bf7f5f]Chstnut   [color=efe5bf]Blond"
+
+[node name="Hairs" type="Control" parent="Wardrobe"]
+anchors_preset = 0
+offset_right = 1114.0
+offset_bottom = 1080.0
+
+[node name="HairRed" type="Sprite2D" parent="Wardrobe/Hairs"]
+position = Vector2(152, 557)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("9_hhcpw")
+
+[node name="Button" type="Button" parent="Wardrobe/Hairs"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 130.0
+offset_right = 284.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
+script = ExtResource("6_devvj")
+Type = "Hair"
+ActiveDuring = 100
+
+[node name="CurlyHair" type="Sprite2D" parent="Wardrobe/Hairs"]
+position = Vector2(431, 568)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("8_bg4s2")
+
+[node name="Button2" type="Button" parent="Wardrobe/Hairs"]
+layout_mode = 0
+offset_left = 322.00024
+offset_top = 130.0
+offset_right = 556.00024
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
+script = ExtResource("6_devvj")
+Outfit = 1
+Type = "Hair"
+ActiveDuring = 100
+
+[node name="BrownHair" type="Sprite2D" parent="Wardrobe/Hairs"]
+position = Vector2(697, 573)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("7_3b0ty")
+
+[node name="Button3" type="Button" parent="Wardrobe/Hairs"]
+layout_mode = 0
+offset_left = 583.0
+offset_top = 130.0
+offset_right = 817.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
+script = ExtResource("6_devvj")
+Outfit = 2
+Type = "Hair"
+ActiveDuring = 100
+
+[node name="BlondeHair" type="Sprite2D" parent="Wardrobe/Hairs"]
+position = Vector2(943, 579)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("5_2gh4u")
+
+[node name="Button4" type="Button" parent="Wardrobe/Hairs"]
+layout_mode = 0
+offset_left = 835.0
+offset_top = 130.0
+offset_right = 1069.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 3
+Type = "Hair"
+ActiveDuring = 100
+
+[node name="WardrobeTops" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 3400.0
+offset_right = 4518.1704
+offset_bottom = 1079.0
+grow_vertical = 2
+
+[node name="TextureHind" type="Sprite2D" parent="WardrobeTops"]
+position = Vector2(149.915, 540)
+scale = Vector2(111.4, 108.000015)
+texture = ExtResource("13_c2ibq")
+offset = Vector2(3.65, 0)
+
+[node name="Category" type="RichTextLabel" parent="WardrobeTops"]
+layout_mode = 0
+offset_top = 18.0
+offset_right = 1114.0
+offset_bottom = 751.0
+theme = ExtResource("3_5tuhn")
+theme_override_fonts/normal_font = ExtResource("1_wtcfe")
+bbcode_enabled = true
+text = "[center]Tops
+
+
+
+
+
+
+
+
+
+[left][color=9f9f9f]   Chains    [color=8fafaf] Shirt     [color=cdcd6f]T-top     [color=ef4444]:3"
+
+[node name="Tops" type="Control" parent="WardrobeTops"]
+anchors_preset = 0
+offset_right = 1114.0
+offset_bottom = 1080.0
+
+[node name="HairRed" type="Sprite2D" parent="WardrobeTops/Tops"]
+position = Vector2(152, 557)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("16_bg4s2")
+offset = Vector2(0, -64)
+
+[node name="TopB1" type="Button" parent="WardrobeTops/Tops"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 130.0
+offset_right = 284.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
+script = ExtResource("6_devvj")
+Type = "Tops"
+ActiveDuring = 200
+
+[node name="CurlyHair" type="Sprite2D" parent="WardrobeTops/Tops"]
+position = Vector2(431, 568)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("17_hhcpw")
+offset = Vector2(0, -140)
+
+[node name="TopB2" type="Button" parent="WardrobeTops/Tops"]
+layout_mode = 0
+offset_left = 322.00024
+offset_top = 130.0
+offset_right = 556.00024
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
+script = ExtResource("6_devvj")
+Outfit = 1
+Type = "Tops"
+ActiveDuring = 200
+
+[node name="BrownHair" type="Sprite2D" parent="WardrobeTops/Tops"]
+position = Vector2(697, 573)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("18_mxvw5")
+offset = Vector2(0, -140)
+
+[node name="TopB3" type="Button" parent="WardrobeTops/Tops"]
+layout_mode = 0
+offset_left = 583.0
+offset_top = 130.0
+offset_right = 817.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
+script = ExtResource("6_devvj")
+Outfit = 2
+Type = "Tops"
+ActiveDuring = 200
+
+[node name="BlondeHair" type="Sprite2D" parent="WardrobeTops/Tops"]
+position = Vector2(943, 579)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("19_xrxkg")
+offset = Vector2(0, -140)
+
+[node name="TopB4" type="Button" parent="WardrobeTops/Tops"]
+layout_mode = 0
+offset_left = 835.0
+offset_top = 130.0
+offset_right = 1069.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 3
+Type = "Tops"
+ActiveDuring = 200
+
+[node name="WardrobePant" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 4700.0
+offset_right = 5818.1704
+offset_bottom = 1079.0
+grow_vertical = 2
+
+[node name="TextureHind" type="Sprite2D" parent="WardrobePant"]
+position = Vector2(149.915, 540)
+scale = Vector2(111.4, 108.000015)
+texture = ExtResource("13_c2ibq")
+offset = Vector2(3.65, 0)
+
+[node name="Category" type="RichTextLabel" parent="WardrobePant"]
+layout_mode = 0
+offset_top = 18.0
+offset_right = 1114.0
+offset_bottom = 751.0
+theme = ExtResource("3_5tuhn")
+theme_override_fonts/normal_font = ExtResource("1_wtcfe")
+bbcode_enabled = true
+text = "[center]Leggings
+
+
+
+
+
+
+
+
+
+[left][color=9f9f9f]   Formal    [color=8fafaf] Casual     [color=cdcd6f]Loose     [color=ef4444]Cute"
+
+[node name="Pants" type="Control" parent="WardrobePant"]
+anchors_preset = 0
+offset_right = 1114.0
+offset_bottom = 1080.0
+
+[node name="HairRed" type="Sprite2D" parent="WardrobePant/Pants"]
+position = Vector2(152, 557)
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("16_oye8v")
+offset = Vector2(0, -700)
+
+[node name="TopP1" type="Button" parent="WardrobePant/Pants"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 130.0
+offset_right = 284.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
+script = ExtResource("6_devvj")
+Type = "Pant"
+ActiveDuring = 300
+
+[node name="CurlyHair" type="Sprite2D" parent="WardrobePant/Pants"]
+position = Vector2(431, 568)
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("17_40n85")
+offset = Vector2(0, -700)
+
+[node name="TopP2" type="Button" parent="WardrobePant/Pants"]
+layout_mode = 0
+offset_left = 322.00024
+offset_top = 130.0
+offset_right = 556.00024
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
+script = ExtResource("6_devvj")
+Outfit = 1
+Type = "Pant"
+ActiveDuring = 300
+
+[node name="BrownHair" type="Sprite2D" parent="WardrobePant/Pants"]
+position = Vector2(697, 573)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("18_gb15f")
+offset = Vector2(0, -400)
+
+[node name="TopP3" type="Button" parent="WardrobePant/Pants"]
+layout_mode = 0
+offset_left = 583.0
+offset_top = 130.0
+offset_right = 817.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
+script = ExtResource("6_devvj")
+Outfit = 2
+Type = "Pant"
+ActiveDuring = 300
+
+[node name="BlondeHair" type="Sprite2D" parent="WardrobePant/Pants"]
+position = Vector2(943, 579)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("19_sph85")
+offset = Vector2(0, -400)
+
+[node name="TopP4" type="Button" parent="WardrobePant/Pants"]
+layout_mode = 0
+offset_left = 835.0
+offset_top = 130.0
+offset_right = 1069.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 3
+Type = "Pant"
+ActiveDuring = 300
+
+[node name="WardrobeShoe" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 6000.0
+offset_right = 7118.1704
+offset_bottom = 1079.0
+grow_vertical = 2
+
+[node name="TextureHind" type="Sprite2D" parent="WardrobeShoe"]
+position = Vector2(149.915, 540)
+scale = Vector2(111.4, 108.000015)
+texture = ExtResource("13_c2ibq")
+offset = Vector2(3.65, 0)
+
+[node name="Category" type="RichTextLabel" parent="WardrobeShoe"]
+layout_mode = 0
+offset_top = 18.0
+offset_right = 1114.0
+offset_bottom = 751.0
+theme = ExtResource("3_5tuhn")
+theme_override_fonts/normal_font = ExtResource("1_wtcfe")
+bbcode_enabled = true
+text = "[center]Shoes
+
+
+
+
+
+
+
+
+
+[left][color=9f9f9f]   Cloppy      [color=8fafaf]V.Hefty     [color=cdcd6f] Tall     [color=ef4444]  Cute"
+
+[node name="Shoes" type="Control" parent="WardrobeShoe"]
+anchors_preset = 0
+offset_right = 1114.0
+offset_bottom = 1080.0
+
+[node name="HairRed" type="Sprite2D" parent="WardrobeShoe/Shoes"]
+position = Vector2(152, 557)
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("20_o7g6l")
+offset = Vector2(0, -900)
+
+[node name="TopS1" type="Button" parent="WardrobeShoe/Shoes"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 130.0
+offset_right = 284.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
+script = ExtResource("6_devvj")
+Type = "Shoe"
+ActiveDuring = 400
+
+[node name="CurlyHair" type="Sprite2D" parent="WardrobeShoe/Shoes"]
+position = Vector2(431, 568)
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("21_vi5kq")
+offset = Vector2(0, -900)
+
+[node name="TopS2" type="Button" parent="WardrobeShoe/Shoes"]
+layout_mode = 0
+offset_left = 322.00024
+offset_top = 130.0
+offset_right = 556.00024
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
+script = ExtResource("6_devvj")
+Outfit = 1
+Type = "Shoe"
+ActiveDuring = 400
+
+[node name="BrownHair" type="Sprite2D" parent="WardrobeShoe/Shoes"]
+position = Vector2(697, 573)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("22_5mkgo")
+offset = Vector2(0, -830)
+
+[node name="TopS3" type="Button" parent="WardrobeShoe/Shoes"]
+layout_mode = 0
+offset_left = 583.0
+offset_top = 130.0
+offset_right = 817.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
+script = ExtResource("6_devvj")
+Outfit = 2
+Type = "Shoe"
+ActiveDuring = 400
+
+[node name="BlondeHair" type="Sprite2D" parent="WardrobeShoe/Shoes"]
+position = Vector2(943, 579)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("23_3ccbu")
+offset = Vector2(0, -830)
+
+[node name="TopS4" type="Button" parent="WardrobeShoe/Shoes"]
+layout_mode = 0
+offset_left = 835.0
+offset_top = 130.0
+offset_right = 1069.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 3
+Type = "Shoe"
+ActiveDuring = 400
+
+[node name="WardrobeAcc" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 7300.0
+offset_right = 8418.17
+offset_bottom = 1079.0
+grow_vertical = 2
+
+[node name="TextureHind" type="Sprite2D" parent="WardrobeAcc"]
+position = Vector2(149.915, 540)
+scale = Vector2(111.4, 108.000015)
+texture = ExtResource("13_c2ibq")
+offset = Vector2(3.65, 0)
+
+[node name="Category" type="RichTextLabel" parent="WardrobeAcc"]
+layout_mode = 0
+offset_top = 18.0
+offset_right = 1114.0
+offset_bottom = 751.0
+theme = ExtResource("3_5tuhn")
+theme_override_fonts/normal_font = ExtResource("1_wtcfe")
+bbcode_enabled = true
+text = "[center]Bling-bling
+
+
+
+
+
+
+
+
+
+[left][color=4f6f7f]    Cuffs      [color=ef8faf] Neckla.     [color=bfbfbf]S.Ear    [color=cdcd6f]  G.Ear"
+
+[node name="Accessoar" type="Control" parent="WardrobeAcc"]
+anchors_preset = 0
+offset_right = 1114.0
+offset_bottom = 1080.0
+
+[node name="HairRed" type="Sprite2D" parent="WardrobeAcc/Accessoar"]
+position = Vector2(152, 557)
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("24_sph85")
+offset = Vector2(0, -750)
+
+[node name="TopA1" type="Button" parent="WardrobeAcc/Accessoar"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 130.0
+offset_right = 284.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
+script = ExtResource("6_devvj")
+Type = "Acs"
+ActiveDuring = 500
+
+[node name="CurlyHair" type="Sprite2D" parent="WardrobeAcc/Accessoar"]
+position = Vector2(431, 568)
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("25_o7g6l")
+offset = Vector2(0, -250)
+
+[node name="TopA2" type="Button" parent="WardrobeAcc/Accessoar"]
+layout_mode = 0
+offset_left = 322.00024
+offset_top = 130.0
+offset_right = 556.00024
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
+script = ExtResource("6_devvj")
+Outfit = 1
+Type = "Acs"
+ActiveDuring = 500
+
+[node name="BrownHair" type="Sprite2D" parent="WardrobeAcc/Accessoar"]
+position = Vector2(697, 573)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("26_vi5kq")
+
+[node name="TopA3" type="Button" parent="WardrobeAcc/Accessoar"]
+layout_mode = 0
+offset_left = 583.0
+offset_top = 130.0
+offset_right = 817.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
+script = ExtResource("6_devvj")
+Outfit = 2
+Type = "Acs"
+ActiveDuring = 500
+
+[node name="BlondeHair" type="Sprite2D" parent="WardrobeAcc/Accessoar"]
+self_modulate = Color(1, 0.8156863, 0.2784314, 1)
+position = Vector2(943, 579)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("26_vi5kq")
+
+[node name="TopA4" type="Button" parent="WardrobeAcc/Accessoar"]
+layout_mode = 0
+offset_left = 835.0
+offset_top = 130.0
+offset_right = 1069.0
+offset_bottom = 594.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 3
+Type = "Acs"
+ActiveDuring = 500
 
 [node name="Character" type="AnimatedSprite2D" parent="."]
+position = Vector2(970, 565.99994)
+scale = Vector2(0.6953889, 0.69538873)
 sprite_frames = SubResource("SpriteFrames_r0du0")
-animation = &"Outfits"
+animation = &"Bases"
+frame_progress = 1.0
+script = ExtResource("4_trn2v")
+
+[node name="White" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("5_2gh4u")
+
+[node name="Brown" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("7_3b0ty")
+
+[node name="Black" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("8_bg4s2")
+
+[node name="Red" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("9_hhcpw")
+
+[node name="Top1" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("16_bg4s2")
+
+[node name="Top2" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("17_hhcpw")
+
+[node name="Top3" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("18_mxvw5")
+
+[node name="Top4" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("19_xrxkg")
+
+[node name="Pants2" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("17_40n85")
+
+[node name="Pants" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("16_oye8v")
+
+[node name="Skirt" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("18_gb15f")
+
+[node name="Skirt2" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("19_sph85")
+
+[node name="S1" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("20_o7g6l")
+
+[node name="S2" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("21_vi5kq")
+
+[node name="S3" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("22_5mkgo")
+
+[node name="S4" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("23_3ccbu")
+
+[node name="A1" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("24_sph85")
+
+[node name="A2" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("25_o7g6l")
+
+[node name="A3" type="Sprite2D" parent="Character"]
+visible = false
+texture = ExtResource("26_vi5kq")
+
+[node name="A4" type="Sprite2D" parent="Character"]
+visible = false
+self_modulate = Color(1, 0.73333335, 0.29411766, 1)
+texture = ExtResource("26_vi5kq")
 
 [node name="TextHandler" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 script = ExtResource("1_epypp")
+metadata/_edit_lock_ = true
 
 [node name="Dialogue" type="Control" parent="TextHandler"]
 layout_mode = 1
@@ -55,16 +800,54 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 111.5
+offset_top = -29.0
 offset_right = -111.5
+offset_bottom = -29.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_0e48y")
+theme = ExtResource("3_5tuhn")
 bbcode_enabled = true
-text = "[bgcolor=black][center][color=#afafaf][ Space ]  "
 horizontal_alignment = 1
 custom_effects = [SubResource("RichTextEffect_q6r6c")]
 
+[node name="NextChar" type="RichTextLabel" parent="TextHandler/Dialogue"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 736.5
+offset_top = -443.0
+offset_right = -151.5
+offset_bottom = -443.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_5tuhn")
+bbcode_enabled = true
+text = "[bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55][D] >  [/blinky]"
+horizontal_alignment = 1
+custom_effects = [SubResource("RichTextEffect_q6r6c")]
+script = ExtResource("8_wkp8b")
+
+[node name="PrevChar" type="RichTextLabel" parent="TextHandler/Dialogue"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 149.5
+offset_top = -443.0
+offset_right = -738.5
+offset_bottom = -443.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_5tuhn")
+bbcode_enabled = true
+text = "[bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55]< [A] [/blinky]"
+horizontal_alignment = 1
+custom_effects = [SubResource("RichTextEffect_q6r6c")]
+script = ExtResource("8_wkp8b")
+
 [node name="Space" type="RichTextLabel" parent="TextHandler/Dialogue"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -72,12 +855,100 @@ anchor_bottom = 1.0
 offset_left = 111.5
 offset_top = 59.0
 offset_right = -111.5
-offset_bottom = -25.0
+offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_0e48y")
-theme_override_font_sizes/normal_font_size = 20
+theme = ExtResource("3_5tuhn")
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
-text = "[bgcolor=black][center][color=#afafaf][blinky speed=4 minimums=0.55][ Space ]  [/blinky]"
+text = "[wave amp=10.0 freq=5.0 connected=1][bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55][ Press Space to Confirm Character ]  [/blinky]"
 horizontal_alignment = 1
 custom_effects = [SubResource("RichTextEffect_q6r6c")]
+script = ExtResource("9_wkp8b")
+
+[connection signal="WornOutfit" from="Wardrobe/Hairs/Button" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="Wardrobe/Hairs/Button" to="Wardrobe/Hairs/Button" method="_on_pressed"]
+[connection signal="pressed" from="Wardrobe/Hairs/Button" to="Wardrobe/Hairs/Button" method="_on_pressed"]
+[connection signal="WornOutfit" from="Wardrobe/Hairs/Button2" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="Wardrobe/Hairs/Button2" to="Wardrobe/Hairs/Button2" method="_on_button_down"]
+[connection signal="pressed" from="Wardrobe/Hairs/Button2" to="Wardrobe/Hairs/Button2" method="_on_pressed"]
+[connection signal="WornOutfit" from="Wardrobe/Hairs/Button3" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="Wardrobe/Hairs/Button3" to="Wardrobe/Hairs/Button3" method="_on_button_down"]
+[connection signal="pressed" from="Wardrobe/Hairs/Button3" to="Wardrobe/Hairs/Button3" method="_on_pressed"]
+[connection signal="WornOutfit" from="Wardrobe/Hairs/Button4" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="Wardrobe/Hairs/Button4" to="Wardrobe/Hairs/Button4" method="_on_button_down"]
+[connection signal="pressed" from="Wardrobe/Hairs/Button4" to="Wardrobe/Hairs/Button4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeTops/Tops/TopB1" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeTops/Tops/TopB1" to="WardrobeTops/Tops/TopB1" method="_on_pressed"]
+[connection signal="pressed" from="WardrobeTops/Tops/TopB1" to="WardrobeTops/Tops/TopB1" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeTops/Tops/TopB2" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeTops/Tops/TopB2" to="WardrobeTops/Tops/TopB2" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeTops/Tops/TopB2" to="WardrobeTops/Tops/TopB2" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeTops/Tops/TopB3" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeTops/Tops/TopB3" to="WardrobeTops/Tops/TopB3" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeTops/Tops/TopB3" to="WardrobeTops/Tops/TopB3" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeTops/Tops/TopB4" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeTops/Tops/TopB4" to="WardrobeTops/Tops/TopB4" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeTops/Tops/TopB4" to="WardrobeTops/Tops/TopB4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobePant/Pants/TopP1" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobePant/Pants/TopP1" to="WardrobePant/Pants/TopP1" method="_on_pressed"]
+[connection signal="pressed" from="WardrobePant/Pants/TopP1" to="WardrobePant/Pants/TopP1" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobePant/Pants/TopP2" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobePant/Pants/TopP2" to="WardrobePant/Pants/TopP2" method="_on_button_down"]
+[connection signal="pressed" from="WardrobePant/Pants/TopP2" to="WardrobePant/Pants/TopP2" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobePant/Pants/TopP3" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobePant/Pants/TopP3" to="WardrobePant/Pants/TopP3" method="_on_button_down"]
+[connection signal="pressed" from="WardrobePant/Pants/TopP3" to="WardrobePant/Pants/TopP3" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobePant/Pants/TopP4" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobePant/Pants/TopP4" to="WardrobePant/Pants/TopP4" method="_on_button_down"]
+[connection signal="pressed" from="WardrobePant/Pants/TopP4" to="WardrobePant/Pants/TopP4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeShoe/Shoes/TopS1" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeShoe/Shoes/TopS1" to="WardrobeShoe/Shoes/TopS1" method="_on_pressed"]
+[connection signal="pressed" from="WardrobeShoe/Shoes/TopS1" to="WardrobeShoe/Shoes/TopS1" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeShoe/Shoes/TopS2" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeShoe/Shoes/TopS2" to="WardrobeShoe/Shoes/TopS2" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeShoe/Shoes/TopS2" to="WardrobeShoe/Shoes/TopS2" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeShoe/Shoes/TopS3" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeShoe/Shoes/TopS3" to="WardrobeShoe/Shoes/TopS3" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeShoe/Shoes/TopS3" to="WardrobeShoe/Shoes/TopS3" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeShoe/Shoes/TopS4" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeShoe/Shoes/TopS4" to="WardrobeShoe/Shoes/TopS4" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeShoe/Shoes/TopS4" to="WardrobeShoe/Shoes/TopS4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeAcc/Accessoar/TopA1" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeAcc/Accessoar/TopA1" to="WardrobeAcc/Accessoar/TopA1" method="_on_pressed"]
+[connection signal="pressed" from="WardrobeAcc/Accessoar/TopA1" to="WardrobeAcc/Accessoar/TopA1" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeAcc/Accessoar/TopA2" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeAcc/Accessoar/TopA2" to="WardrobeAcc/Accessoar/TopA2" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeAcc/Accessoar/TopA2" to="WardrobeAcc/Accessoar/TopA2" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeAcc/Accessoar/TopA3" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeAcc/Accessoar/TopA3" to="WardrobeAcc/Accessoar/TopA3" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeAcc/Accessoar/TopA3" to="WardrobeAcc/Accessoar/TopA3" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeAcc/Accessoar/TopA4" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeAcc/Accessoar/TopA4" to="WardrobeAcc/Accessoar/TopA4" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeAcc/Accessoar/TopA4" to="WardrobeAcc/Accessoar/TopA4" method="_on_pressed"]
+[connection signal="DialogueRequest" from="Character" to="TextHandler" method="_on_character_dialogue_request"]
+[connection signal="GamestateNotif" from="Character" to="Wardrobe/Hairs/Button" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="Wardrobe/Hairs/Button2" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="Wardrobe/Hairs/Button3" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="Wardrobe/Hairs/Button4" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeTops/Tops/TopB1" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeTops/Tops/TopB2" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeTops/Tops/TopB3" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeTops/Tops/TopB4" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobePant/Pants/TopP1" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobePant/Pants/TopP2" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobePant/Pants/TopP3" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobePant/Pants/TopP4" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeShoe/Shoes/TopS1" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeShoe/Shoes/TopS2" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeShoe/Shoes/TopS3" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeShoe/Shoes/TopS4" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeAcc/Accessoar/TopA1" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeAcc/Accessoar/TopA2" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeAcc/Accessoar/TopA3" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeAcc/Accessoar/TopA4" method="_on_character_gamestate_notif"]
+[connection signal="InitializeDialogue" from="Character" to="TextHandler" method="_onCharConfirmation"]
+[connection signal="InitializeDialogue" from="Character" to="Title" method="_on_character_initialize_dialogue"]
+[connection signal="CharacterHasBeenConfirmed" from="TextHandler" to="TextHandler/Dialogue/NextChar" method="_on_text_handler_character_has_been_confirmed"]
+[connection signal="CharacterHasBeenConfirmed" from="TextHandler" to="TextHandler/Dialogue/PrevChar" method="_on_text_handler_character_has_been_confirmed"]
+[connection signal="FinishedDialogueBlock" from="TextHandler" to="Character" method="_on_text_handler_finished_dialogue_block"]

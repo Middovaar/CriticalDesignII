@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://okn3pmc1co4r"]
+
+[ext_resource type="FontFile" uid="uid://clx1w8wbh0sce" path="res://VCREAS 3.0.ttf" id="1_yd3fu"]
+
+[resource]
+resource_local_to_scene = true
+default_font = ExtResource("1_yd3fu")
+default_font_size = 45
