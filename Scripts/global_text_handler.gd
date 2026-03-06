@@ -17,9 +17,16 @@ var TextIsAnimated = false
 
 var TextCompounder
 var ReadyText:Array 
+var MayCloseEarly = false
+
+var HasSelectedSomething:bool
+var SelectedOption:bool
+
+var GameEnd:bool = false
 
 signal CharacterHasBeenConfirmed
 signal FinishedDialogueBlock(DialogueBlock:int)
+signal DialogueOptions(Options:String)
 
 func _ready():
 	#region that contains Loads the Dialogue Data into Variable Form
@@ -34,6 +41,8 @@ func _ready():
 	Dialogue = jsonObject.data
 	#endregion
 	%TextBox.text = "" #Nulls the text box
+	HasSelectedSomething = false
+	SelectedOption = false
 
 func RenderText(DialogueUUID):
 	# Detects how many lines of texts there are in a given dialogue block
@@ -57,12 +66,41 @@ func RenderText(DialogueUUID):
 	else:
 		emit_signal("FinishedDialogueBlock", DialogueUUID)
 		DialogueClear()
+		if GameEnd:
+			get_tree().quit(0)
 
 func DialogueClear():
 	%TextBox.text = ""
 	DisplayedText = ""
 	ReadyText = []
 
+func _input(_event):
+	
+	if Input.is_action_just_pressed("Left") and MayCloseEarly:
+		%PrevChar.text = "[bgcolor=9f4178][center][color=#ffff00][blinky speed=4 minimums=0.55]< No"
+		%NextChar.text = "[bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55]Yes >"
+		HasSelectedSomething = true
+		SelectedOption = false
+	
+	if Input.is_action_just_pressed("Right") and MayCloseEarly:
+		%PrevChar.text = "[bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55]< No"
+		%NextChar.text = "[bgcolor=9f4178][center][color=#ffff00][blinky speed=4 minimums=0.55]Yes >"
+		HasSelectedSomething = true
+		SelectedOption = true
+	
+	if Input.is_action_just_pressed("Confirm") and HasSelectedSomething and MayCloseEarly:
+		MayCloseEarly = false
+		if SelectedOption != true:
+			DialogueClear()
+			%NextChar.text = ""
+			%PrevChar.text = ""
+			_on_character_dialogue_request(800)
+		else: 
+			DialogueClear()
+			%NextChar.text = ""
+			%PrevChar.text = ""
+			DialogueClear()
+			_on_character_dialogue_request(900)
 
 func DialogueSwitchBoard(DialogueUUID):
 	### DialogueSwitchBoard
@@ -90,8 +128,47 @@ func DialogueSwitchBoard(DialogueUUID):
 			DialogueAdress = Dialogue.DressupStart.G
 		20:
 			DialogueAdress = Dialogue.DressupHair.A
-		600:
+		708:
 			DialogueAdress = Dialogue.DressupEnd.A
+		707:
+			DialogueAdress = Dialogue.DressupEnd.B
+		706:
+			DialogueAdress = Dialogue.DressupEnd.C
+		705:
+			DialogueAdress = Dialogue.DressupEnd.D
+		704:
+			DialogueAdress = Dialogue.DressupEnd.E
+		703:
+			DialogueAdress = Dialogue.DressupEnd.F
+		702:
+			DialogueAdress = Dialogue.DressupEnd.G
+		701:
+			DialogueAdress = Dialogue.DressupEnd.H
+		700:
+			DialogueAdress = Dialogue.DressupEnd.I
+			emit_signal("DialogueOptions", "YesNo")
+			MayCloseEarly = true
+		804:
+			DialogueAdress = Dialogue.DressupEndAfterNo.A
+		803:
+			DialogueAdress = Dialogue.DressupEndAfterNo.B
+		802:
+			DialogueAdress = Dialogue.DressupEndAfterNo.C
+		801:
+			DialogueAdress = Dialogue.DressupEndAfterNo.D
+		800:
+			DialogueAdress = Dialogue.DressupEndAfterNo.E
+		904:
+			DialogueAdress = Dialogue.DressupEndAfterYes.A
+		903:
+			DialogueAdress = Dialogue.DressupEndAfterYes.B
+		902:
+			DialogueAdress = Dialogue.DressupEndAfterYes.C
+		901:
+			DialogueAdress = Dialogue.DressupEndAfterYes.D
+		900:
+			DialogueAdress = Dialogue.DressupEndAfterYes.E
+			GameEnd = true
 		
 	
 	return DialogueAdress
@@ -109,8 +186,13 @@ func DialogueItemBoard(DialogueUUID):
 			DialogueItems = Dialogue.DressupStart.Items
 		20:
 			DialogueItems = Dialogue.DressupHair.Items
-		600:
+		700:
 			DialogueItems = Dialogue.DressupEnd.Items
+		800:
+			DialogueItems = Dialogue.DressupEndAfterNo.Items
+		900:
+			DialogueItems = Dialogue.DressupEndAfterNo.Items
+		
 	return DialogueItems
 
 func _onCharConfirmation():

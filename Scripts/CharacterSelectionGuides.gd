@@ -1,15 +1,16 @@
 extends RichTextLabel
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+@export_enum("Left", "Right") var Type:String
 
 
 func _on_text_handler_character_has_been_confirmed(): 
-	self.queue_free()
+	text = ""
+
+
+func _on_text_handler_dialogue_options(Options):
+	match Options:
+		"YesNo":
+			if Type == "Left":
+				text = "[bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55]< No"
+			else:
+				text = "[bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55]Yes >"

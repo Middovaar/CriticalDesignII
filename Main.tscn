@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://njta5a02wr31"]
+[gd_scene format=3 uid="uid://njta5a02wr31"]
 
 [ext_resource type="Texture2D" uid="uid://jl32yxf5fqoy" path="res://Gfx/background1.png" id="1_c6i3y"]
 [ext_resource type="Script" uid="uid://gpt8sha6fvf7" path="res://Scripts/global_text_handler.gd" id="1_epypp"]
@@ -20,9 +20,11 @@
 [ext_resource type="Script" uid="uid://c7w5nv6rkytfj" path="res://titletag.gd" id="10_20pc6"]
 [ext_resource type="Texture2D" uid="uid://cc12sr4ns4drr" path="res://Gfx/anchors.png" id="13_c2ibq"]
 [ext_resource type="Texture2D" uid="uid://5k33jn84oa63" path="res://Gfx/Clothing/top_1.png" id="16_bg4s2"]
+[ext_resource type="Texture2D" uid="uid://c8c0m4mqfva0y" path="res://Gfx/Clothing/YandereDevShirt.PNG" id="16_f4ese"]
 [ext_resource type="Texture2D" uid="uid://btn7hn577r54o" path="res://Gfx/Clothing/pantss.png" id="16_oye8v"]
 [ext_resource type="Texture2D" uid="uid://bwtljpie2w7r5" path="res://Gfx/Clothing/pants2.png" id="17_40n85"]
 [ext_resource type="Texture2D" uid="uid://c0npfvpo7q3xo" path="res://Gfx/Clothing/top_2.png" id="17_hhcpw"]
+[ext_resource type="Texture2D" uid="uid://ce2j5ddpc2jqh" path="res://Gfx/Clothing/MintTop.PNG" id="17_rchyr"]
 [ext_resource type="Texture2D" uid="uid://co5e4kl04u8ug" path="res://Gfx/Clothing/skirt.png" id="18_gb15f"]
 [ext_resource type="Texture2D" uid="uid://q0siojxgpfj" path="res://Gfx/Clothing/top_3.png" id="18_mxvw5"]
 [ext_resource type="Texture2D" uid="uid://l5l4al38426y" path="res://Gfx/Clothing/skirt_2.png" id="19_sph85"]
@@ -30,10 +32,21 @@
 [ext_resource type="Texture2D" uid="uid://bbyhgafmr0nyk" path="res://Gfx/Clothing/booots_2.png" id="20_o7g6l"]
 [ext_resource type="Texture2D" uid="uid://bbkwjvxim47je" path="res://Gfx/Clothing/boooots.png" id="21_vi5kq"]
 [ext_resource type="Texture2D" uid="uid://b556sf5lllyr2" path="res://Gfx/Clothing/boots_3.png" id="22_5mkgo"]
+[ext_resource type="Texture2D" uid="uid://bujp163sjn81v" path="res://Gfx/Clothing/Kjol.PNG" id="22_pljue"]
 [ext_resource type="Texture2D" uid="uid://dhyjfy1ssepau" path="res://Gfx/Clothing/shoes.png" id="23_3ccbu"]
+[ext_resource type="Texture2D" uid="uid://bid07yejiyuvi" path="res://Gfx/Clothing/HonkeyTonkPants.PNG" id="23_nx4yo"]
 [ext_resource type="Texture2D" uid="uid://b1sgw2n0v4oxf" path="res://Gfx/Clothing/acc.png" id="24_sph85"]
 [ext_resource type="Texture2D" uid="uid://bse024nwtb3o7" path="res://Gfx/Clothing/acc_2.png" id="25_o7g6l"]
 [ext_resource type="Texture2D" uid="uid://ctywwwdqejjpt" path="res://Gfx/Clothing/earings.png" id="26_vi5kq"]
+[ext_resource type="Texture2D" uid="uid://cg7rbrj12qbxu" path="res://Gfx/Clothing/BrownShoes.PNG" id="28_5tfui"]
+[ext_resource type="Texture2D" uid="uid://cmjijd20lsuhv" path="res://Gfx/Clothing/BlackShoes.png" id="29_38apo"]
+[ext_resource type="Texture2D" uid="uid://ba8g80ho181do" path="res://Gfx/Clothing/Choker.PNG" id="33_khphd"]
+[ext_resource type="Texture2D" uid="uid://cftofpamq3ouv" path="res://Gfx/Clothing/ClownNose.PNG" id="34_g4yo4"]
+[ext_resource type="Texture2D" uid="uid://cxrrv16h4h2wn" path="res://Gfx/Clothing/DressChoker.PNG" id="35_im7ls"]
+[ext_resource type="Texture2D" uid="uid://duoadtvuh6aw" path="res://Gfx/Clothing/GiftChoker.PNG" id="36_a34eg"]
+[ext_resource type="Texture2D" uid="uid://bj4c5ogxobgl0" path="res://Gfx/Clothing/GreyChoker.PNG" id="37_via5u"]
+[ext_resource type="Texture2D" uid="uid://b1hrac3rn23s6" path="res://Gfx/Clothing/MeatChoker.PNG" id="38_ac6pf"]
+[ext_resource type="Texture2D" uid="uid://wt0drhtg5kng" path="res://Gfx/Clothing/Rozebump.PNG" id="39_ek63v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wkp8b"]
 size = Vector2(654.00006, 78.000015)
@@ -71,15 +84,15 @@ animations = [{
 script = ExtResource("3_0hol4")
 metadata/_custom_type_script = "uid://drowiaolajpl0"
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=603333282]
 
-[node name="Background1" type="Sprite2D" parent="."]
+[node name="Background1" type="Sprite2D" parent="." unique_id=411829578]
 position = Vector2(1305.0001, 521.00006)
 scale = Vector2(1.3759711, 1.034467)
 texture = ExtResource("1_c6i3y")
 metadata/_edit_lock_ = true
 
-[node name="Title" type="RigidBody2D" parent="."]
+[node name="Title" type="RigidBody2D" parent="." unique_id=253999197]
 position = Vector2(1.8189894e-12, 4.5474735e-13)
 scale = Vector2(0.99999994, 0.99999994)
 gravity_scale = -1.0
@@ -89,41 +102,41 @@ inertia = 0.93
 freeze = true
 script = ExtResource("10_20pc6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Title"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Title" unique_id=793688924]
 position = Vector2(432.99994, 121.99998)
 scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_wkp8b")
 
-[node name="Sprite" type="Sprite2D" parent="Title"]
+[node name="Sprite" type="Sprite2D" parent="Title" unique_id=2127006520]
 position = Vector2(466.99997, 126.99999)
 scale = Vector2(0.59453785, 0.59453785)
 texture = ExtResource("8_03owx")
 
-[node name="Anchor1" type="Sprite2D" parent="."]
+[node name="Anchor1" type="Sprite2D" parent="." unique_id=946528775]
 unique_name_in_owner = true
 visible = false
 position = Vector2(400, 566)
 texture = ExtResource("13_c2ibq")
 
-[node name="Anchor2" type="Sprite2D" parent="."]
+[node name="Anchor2" type="Sprite2D" parent="." unique_id=1874852795]
 unique_name_in_owner = true
 visible = false
 position = Vector2(970, 566)
 texture = ExtResource("13_c2ibq")
 
-[node name="AnchorWardrobeOut" type="Sprite2D" parent="."]
+[node name="AnchorWardrobeOut" type="Sprite2D" parent="." unique_id=435287507]
 unique_name_in_owner = true
 visible = false
 position = Vector2(2100, 566)
 texture = ExtResource("13_c2ibq")
 
-[node name="AnchorWardrobe" type="Sprite2D" parent="."]
+[node name="AnchorWardrobe" type="Sprite2D" parent="." unique_id=726801630]
 unique_name_in_owner = true
 visible = false
 position = Vector2(828, 566)
 texture = ExtResource("13_c2ibq")
 
-[node name="Wardrobe" type="Control" parent="."]
+[node name="Wardrobe" type="Control" parent="." unique_id=2132561398]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 4
@@ -134,13 +147,13 @@ offset_right = 3213.0015
 offset_bottom = 1079.0
 grow_vertical = 2
 
-[node name="TextureHind" type="Sprite2D" parent="Wardrobe"]
+[node name="TextureHind" type="Sprite2D" parent="Wardrobe" unique_id=1809717215]
 position = Vector2(149.915, 540)
 scale = Vector2(111.4, 108.000015)
 texture = ExtResource("13_c2ibq")
 offset = Vector2(3.65, 0)
 
-[node name="Category" type="RichTextLabel" parent="Wardrobe"]
+[node name="Category" type="RichTextLabel" parent="Wardrobe" unique_id=849673484]
 layout_mode = 0
 offset_top = 18.0
 offset_right = 1114.0
@@ -160,79 +173,79 @@ text = "[center]Hair
 
  [color=ef258f]Red     [color=7f7f7f] Black    [color=bf7f5f]Chstnut   [color=efe5bf]Blond"
 
-[node name="Hairs" type="Control" parent="Wardrobe"]
+[node name="Hairs" type="Control" parent="Wardrobe" unique_id=169804460]
 anchors_preset = 0
 offset_right = 1114.0
 offset_bottom = 1080.0
 
-[node name="HairRed" type="Sprite2D" parent="Wardrobe/Hairs"]
+[node name="HairRed" type="Sprite2D" parent="Wardrobe/Hairs" unique_id=476155448]
 position = Vector2(152, 557)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("9_hhcpw")
 
-[node name="Button" type="Button" parent="Wardrobe/Hairs"]
+[node name="Button" type="Button" parent="Wardrobe/Hairs" unique_id=101861810]
 layout_mode = 0
 offset_left = 50.0
-offset_top = 130.0
-offset_right = 284.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 283.99988
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
 script = ExtResource("6_devvj")
 Type = "Hair"
 ActiveDuring = 100
 
-[node name="CurlyHair" type="Sprite2D" parent="Wardrobe/Hairs"]
+[node name="CurlyHair" type="Sprite2D" parent="Wardrobe/Hairs" unique_id=1674781771]
 position = Vector2(431, 568)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("8_bg4s2")
 
-[node name="Button2" type="Button" parent="Wardrobe/Hairs"]
+[node name="Button2" type="Button" parent="Wardrobe/Hairs" unique_id=970200895]
 layout_mode = 0
 offset_left = 322.00024
-offset_top = 130.0
-offset_right = 556.00024
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 556.0001
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
 script = ExtResource("6_devvj")
 Outfit = 1
 Type = "Hair"
 ActiveDuring = 100
 
-[node name="BrownHair" type="Sprite2D" parent="Wardrobe/Hairs"]
+[node name="BrownHair" type="Sprite2D" parent="Wardrobe/Hairs" unique_id=1920802158]
 position = Vector2(697, 573)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("7_3b0ty")
 
-[node name="Button3" type="Button" parent="Wardrobe/Hairs"]
+[node name="Button3" type="Button" parent="Wardrobe/Hairs" unique_id=1745190342]
 layout_mode = 0
 offset_left = 583.0
-offset_top = 130.0
-offset_right = 817.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 816.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
 script = ExtResource("6_devvj")
 Outfit = 2
 Type = "Hair"
 ActiveDuring = 100
 
-[node name="BlondeHair" type="Sprite2D" parent="Wardrobe/Hairs"]
+[node name="BlondeHair" type="Sprite2D" parent="Wardrobe/Hairs" unique_id=491595895]
 position = Vector2(943, 579)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("5_2gh4u")
 
-[node name="Button4" type="Button" parent="Wardrobe/Hairs"]
+[node name="Button4" type="Button" parent="Wardrobe/Hairs" unique_id=1412489930]
 layout_mode = 0
 offset_left = 835.0
-offset_top = 130.0
-offset_right = 1069.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 1068.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
 script = ExtResource("6_devvj")
 Outfit = 3
 Type = "Hair"
 ActiveDuring = 100
 
-[node name="WardrobeTops" type="Control" parent="."]
+[node name="WardrobeTops" type="Control" parent="." unique_id=1503707712]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 4
@@ -243,17 +256,17 @@ offset_right = 4518.1704
 offset_bottom = 1079.0
 grow_vertical = 2
 
-[node name="TextureHind" type="Sprite2D" parent="WardrobeTops"]
+[node name="TextureHind" type="Sprite2D" parent="WardrobeTops" unique_id=510570869]
 position = Vector2(149.915, 540)
 scale = Vector2(111.4, 108.000015)
 texture = ExtResource("13_c2ibq")
 offset = Vector2(3.65, 0)
 
-[node name="Category" type="RichTextLabel" parent="WardrobeTops"]
+[node name="Category" type="RichTextLabel" parent="WardrobeTops" unique_id=1303179830]
 layout_mode = 0
 offset_top = 18.0
 offset_right = 1114.0
-offset_bottom = 751.0
+offset_bottom = 1007.0
 theme = ExtResource("3_5tuhn")
 theme_override_fonts/normal_font = ExtResource("1_wtcfe")
 bbcode_enabled = true
@@ -267,85 +280,137 @@ text = "[center]Tops
 
 
 
-[left][color=9f9f9f]   Chains    [color=8fafaf] Shirt     [color=cdcd6f]T-top     [color=ef4444]:3"
+[left][color=9f9f9f]   Chains    [color=8fafaf] Shirt     [color=cdcd6f]T-top     [color=ef4444]:3
 
-[node name="Tops" type="Control" parent="WardrobeTops"]
+
+
+
+
+
+
+
+
+          [color=8fcfff]      Yandere  [color=9fff9f]   Mint "
+
+[node name="Tops" type="Control" parent="WardrobeTops" unique_id=776427000]
 anchors_preset = 0
 offset_right = 1114.0
 offset_bottom = 1080.0
 
-[node name="HairRed" type="Sprite2D" parent="WardrobeTops/Tops"]
+[node name="HairRed" type="Sprite2D" parent="WardrobeTops/Tops" unique_id=667663677]
 position = Vector2(152, 557)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("16_bg4s2")
 offset = Vector2(0, -64)
 
-[node name="TopB1" type="Button" parent="WardrobeTops/Tops"]
+[node name="TopB1" type="Button" parent="WardrobeTops/Tops" unique_id=747586452]
 layout_mode = 0
 offset_left = 50.0
-offset_top = 130.0
-offset_right = 284.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 283.99988
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
 script = ExtResource("6_devvj")
 Type = "Tops"
 ActiveDuring = 200
+CategoryChoices = 6
 
-[node name="CurlyHair" type="Sprite2D" parent="WardrobeTops/Tops"]
+[node name="CurlyHair" type="Sprite2D" parent="WardrobeTops/Tops" unique_id=579801979]
 position = Vector2(431, 568)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("17_hhcpw")
 offset = Vector2(0, -140)
 
-[node name="TopB2" type="Button" parent="WardrobeTops/Tops"]
+[node name="TopB2" type="Button" parent="WardrobeTops/Tops" unique_id=6140342]
 layout_mode = 0
 offset_left = 322.00024
-offset_top = 130.0
-offset_right = 556.00024
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 556.0001
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
 script = ExtResource("6_devvj")
 Outfit = 1
 Type = "Tops"
 ActiveDuring = 200
+CategoryChoices = 6
 
-[node name="BrownHair" type="Sprite2D" parent="WardrobeTops/Tops"]
+[node name="BrownHair" type="Sprite2D" parent="WardrobeTops/Tops" unique_id=1326947116]
 position = Vector2(697, 573)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("18_mxvw5")
 offset = Vector2(0, -140)
 
-[node name="TopB3" type="Button" parent="WardrobeTops/Tops"]
+[node name="TopB3" type="Button" parent="WardrobeTops/Tops" unique_id=1659452231]
 layout_mode = 0
 offset_left = 583.0
-offset_top = 130.0
-offset_right = 817.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 816.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
 script = ExtResource("6_devvj")
 Outfit = 2
 Type = "Tops"
 ActiveDuring = 200
+CategoryChoices = 6
 
-[node name="BlondeHair" type="Sprite2D" parent="WardrobeTops/Tops"]
+[node name="BlondeHair" type="Sprite2D" parent="WardrobeTops/Tops" unique_id=1326128597]
 position = Vector2(943, 579)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("19_xrxkg")
 offset = Vector2(0, -140)
 
-[node name="TopB4" type="Button" parent="WardrobeTops/Tops"]
+[node name="TopB4" type="Button" parent="WardrobeTops/Tops" unique_id=1605684581]
 layout_mode = 0
 offset_left = 835.0
-offset_top = 130.0
-offset_right = 1069.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 1068.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
 script = ExtResource("6_devvj")
 Outfit = 3
 Type = "Tops"
 ActiveDuring = 200
+CategoryChoices = 6
 
-[node name="WardrobePant" type="Control" parent="."]
+[node name="RaveHair" type="Sprite2D" parent="WardrobeTops/Tops" unique_id=1234076304]
+position = Vector2(429.55884, 1029.5732)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("16_f4ese")
+offset = Vector2(0, -140)
+
+[node name="TopB5" type="Button" parent="WardrobeTops/Tops" unique_id=1102675492]
+layout_mode = 0
+offset_left = 321.55884
+offset_top = 600.5732
+offset_right = 555.5587
+offset_bottom = 1000.5731
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 4
+Type = "Tops"
+ActiveDuring = 200
+CategoryChoices = 6
+
+[node name="CrazyHair" type="Sprite2D" parent="WardrobeTops/Tops" unique_id=1738946513]
+position = Vector2(692.559, 824.903)
+scale = Vector2(0.335, 0.335)
+texture = ExtResource("17_rchyr")
+offset = Vector2(0, -140)
+
+[node name="TopB6" type="Button" parent="WardrobeTops/Tops" unique_id=311241593]
+layout_mode = 0
+offset_left = 584.55884
+offset_top = 601.5732
+offset_right = 818.5587
+offset_bottom = 1001.5731
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 5
+Type = "Tops"
+ActiveDuring = 200
+CategoryChoices = 6
+
+[node name="WardrobePant" type="Control" parent="." unique_id=583374483]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 4
@@ -356,17 +421,17 @@ offset_right = 5818.1704
 offset_bottom = 1079.0
 grow_vertical = 2
 
-[node name="TextureHind" type="Sprite2D" parent="WardrobePant"]
+[node name="TextureHind" type="Sprite2D" parent="WardrobePant" unique_id=1796977484]
 position = Vector2(149.915, 540)
 scale = Vector2(111.4, 108.000015)
 texture = ExtResource("13_c2ibq")
 offset = Vector2(3.65, 0)
 
-[node name="Category" type="RichTextLabel" parent="WardrobePant"]
+[node name="Category" type="RichTextLabel" parent="WardrobePant" unique_id=412754712]
 layout_mode = 0
 offset_top = 18.0
 offset_right = 1114.0
-offset_bottom = 751.0
+offset_bottom = 1049.0
 theme = ExtResource("3_5tuhn")
 theme_override_fonts/normal_font = ExtResource("1_wtcfe")
 bbcode_enabled = true
@@ -380,85 +445,137 @@ text = "[center]Leggings
 
 
 
-[left][color=9f9f9f]   Formal    [color=8fafaf] Casual     [color=cdcd6f]Loose     [color=ef4444]Cute"
+[left][color=9f9f9f]   Formal    [color=8fafaf] Casual     [color=cdcd6f]Loose     [color=ef4444]Cute
 
-[node name="Pants" type="Control" parent="WardrobePant"]
+
+
+
+
+
+
+
+
+          [color=4f9fbf]      Flowing   [color=68ffff]  Street "
+
+[node name="Pants" type="Control" parent="WardrobePant" unique_id=1082990021]
 anchors_preset = 0
 offset_right = 1114.0
 offset_bottom = 1080.0
 
-[node name="HairRed" type="Sprite2D" parent="WardrobePant/Pants"]
+[node name="HairRed" type="Sprite2D" parent="WardrobePant/Pants" unique_id=1593599392]
 position = Vector2(152, 557)
 scale = Vector2(0.485, 0.485)
 texture = ExtResource("16_oye8v")
 offset = Vector2(0, -700)
 
-[node name="TopP1" type="Button" parent="WardrobePant/Pants"]
+[node name="TopP1" type="Button" parent="WardrobePant/Pants" unique_id=174838721]
 layout_mode = 0
 offset_left = 50.0
-offset_top = 130.0
-offset_right = 284.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 283.99988
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
 script = ExtResource("6_devvj")
 Type = "Pant"
 ActiveDuring = 300
+CategoryChoices = 6
 
-[node name="CurlyHair" type="Sprite2D" parent="WardrobePant/Pants"]
+[node name="CurlyHair" type="Sprite2D" parent="WardrobePant/Pants" unique_id=1538910089]
 position = Vector2(431, 568)
 scale = Vector2(0.485, 0.485)
 texture = ExtResource("17_40n85")
 offset = Vector2(0, -700)
 
-[node name="TopP2" type="Button" parent="WardrobePant/Pants"]
+[node name="TopP2" type="Button" parent="WardrobePant/Pants" unique_id=1925153709]
 layout_mode = 0
 offset_left = 322.00024
-offset_top = 130.0
-offset_right = 556.00024
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 556.0001
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
 script = ExtResource("6_devvj")
 Outfit = 1
 Type = "Pant"
 ActiveDuring = 300
+CategoryChoices = 6
 
-[node name="BrownHair" type="Sprite2D" parent="WardrobePant/Pants"]
+[node name="BrownHair" type="Sprite2D" parent="WardrobePant/Pants" unique_id=2100119443]
 position = Vector2(697, 573)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("18_gb15f")
 offset = Vector2(0, -400)
 
-[node name="TopP3" type="Button" parent="WardrobePant/Pants"]
+[node name="TopP3" type="Button" parent="WardrobePant/Pants" unique_id=717634605]
 layout_mode = 0
 offset_left = 583.0
-offset_top = 130.0
-offset_right = 817.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 816.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
 script = ExtResource("6_devvj")
 Outfit = 2
 Type = "Pant"
 ActiveDuring = 300
+CategoryChoices = 6
 
-[node name="BlondeHair" type="Sprite2D" parent="WardrobePant/Pants"]
+[node name="BlondeHair" type="Sprite2D" parent="WardrobePant/Pants" unique_id=1527508174]
 position = Vector2(943, 579)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("19_sph85")
 offset = Vector2(0, -400)
 
-[node name="TopP4" type="Button" parent="WardrobePant/Pants"]
+[node name="TopP4" type="Button" parent="WardrobePant/Pants" unique_id=1951305281]
 layout_mode = 0
 offset_left = 835.0
-offset_top = 130.0
-offset_right = 1069.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 1068.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
 script = ExtResource("6_devvj")
 Outfit = 3
 Type = "Pant"
 ActiveDuring = 300
+CategoryChoices = 6
 
-[node name="WardrobeShoe" type="Control" parent="."]
+[node name="PantHair" type="Sprite2D" parent="WardrobePant/Pants" unique_id=2120721416]
+position = Vector2(440.254, 1018.374)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("22_pljue")
+offset = Vector2(0, -400)
+
+[node name="TopP5" type="Button" parent="WardrobePant/Pants" unique_id=995353923]
+layout_mode = 0
+offset_left = 322.55908
+offset_top = 589.37427
+offset_right = 556.55896
+offset_bottom = 989.3742
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 4
+Type = "Pant"
+ActiveDuring = 300
+CategoryChoices = 6
+
+[node name="PantieHair3" type="Sprite2D" parent="WardrobePant/Pants" unique_id=267317473]
+position = Vector2(693.559, 862.804)
+scale = Vector2(0.46, 0.46)
+texture = ExtResource("23_nx4yo")
+offset = Vector2(0, -400)
+
+[node name="TopP6" type="Button" parent="WardrobePant/Pants" unique_id=91865259]
+layout_mode = 0
+offset_left = 585.5591
+offset_top = 589.37427
+offset_right = 819.55896
+offset_bottom = 989.3742
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 5
+Type = "Pant"
+ActiveDuring = 300
+CategoryChoices = 6
+
+[node name="WardrobeShoe" type="Control" parent="." unique_id=625757021]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 4
@@ -469,17 +586,17 @@ offset_right = 7118.1704
 offset_bottom = 1079.0
 grow_vertical = 2
 
-[node name="TextureHind" type="Sprite2D" parent="WardrobeShoe"]
+[node name="TextureHind" type="Sprite2D" parent="WardrobeShoe" unique_id=1350495489]
 position = Vector2(149.915, 540)
 scale = Vector2(111.4, 108.000015)
 texture = ExtResource("13_c2ibq")
 offset = Vector2(3.65, 0)
 
-[node name="Category" type="RichTextLabel" parent="WardrobeShoe"]
+[node name="Category" type="RichTextLabel" parent="WardrobeShoe" unique_id=1503930820]
 layout_mode = 0
 offset_top = 18.0
 offset_right = 1114.0
-offset_bottom = 751.0
+offset_bottom = 1045.0
 theme = ExtResource("3_5tuhn")
 theme_override_fonts/normal_font = ExtResource("1_wtcfe")
 bbcode_enabled = true
@@ -493,102 +610,154 @@ text = "[center]Shoes
 
 
 
-[left][color=9f9f9f]   Cloppy      [color=8fafaf]V.Hefty     [color=cdcd6f] Tall     [color=ef4444]  Cute"
+[left][color=9f9f9f]   Cloppy      [color=8fafaf]V.Hefty     [color=cdcd6f] Tall     [color=ef4444]  Cute
 
-[node name="Shoes" type="Control" parent="WardrobeShoe"]
+
+
+
+
+
+
+
+
+          [color=be7c4f]        Brown   [color=f8ffff]     Ebony "
+
+[node name="Shoes" type="Control" parent="WardrobeShoe" unique_id=455228247]
 anchors_preset = 0
 offset_right = 1114.0
 offset_bottom = 1080.0
 
-[node name="HairRed" type="Sprite2D" parent="WardrobeShoe/Shoes"]
+[node name="HairRed" type="Sprite2D" parent="WardrobeShoe/Shoes" unique_id=1979662978]
 position = Vector2(152, 557)
 scale = Vector2(0.485, 0.485)
 texture = ExtResource("20_o7g6l")
 offset = Vector2(0, -900)
 
-[node name="TopS1" type="Button" parent="WardrobeShoe/Shoes"]
+[node name="TopS1" type="Button" parent="WardrobeShoe/Shoes" unique_id=1256802025]
 layout_mode = 0
 offset_left = 50.0
-offset_top = 130.0
-offset_right = 284.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 283.99988
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
 script = ExtResource("6_devvj")
 Type = "Shoe"
 ActiveDuring = 400
+CategoryChoices = 6
 
-[node name="CurlyHair" type="Sprite2D" parent="WardrobeShoe/Shoes"]
+[node name="CurlyHair" type="Sprite2D" parent="WardrobeShoe/Shoes" unique_id=487929806]
 position = Vector2(431, 568)
 scale = Vector2(0.485, 0.485)
 texture = ExtResource("21_vi5kq")
 offset = Vector2(0, -900)
 
-[node name="TopS2" type="Button" parent="WardrobeShoe/Shoes"]
+[node name="TopS2" type="Button" parent="WardrobeShoe/Shoes" unique_id=1950963707]
 layout_mode = 0
 offset_left = 322.00024
-offset_top = 130.0
-offset_right = 556.00024
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 556.0001
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
 script = ExtResource("6_devvj")
 Outfit = 1
 Type = "Shoe"
 ActiveDuring = 400
+CategoryChoices = 6
 
-[node name="BrownHair" type="Sprite2D" parent="WardrobeShoe/Shoes"]
+[node name="BrownHair" type="Sprite2D" parent="WardrobeShoe/Shoes" unique_id=2120517309]
 position = Vector2(697, 573)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("22_5mkgo")
 offset = Vector2(0, -830)
 
-[node name="TopS3" type="Button" parent="WardrobeShoe/Shoes"]
+[node name="TopS3" type="Button" parent="WardrobeShoe/Shoes" unique_id=2087492878]
 layout_mode = 0
 offset_left = 583.0
-offset_top = 130.0
-offset_right = 817.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 816.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
 script = ExtResource("6_devvj")
 Outfit = 2
 Type = "Shoe"
 ActiveDuring = 400
+CategoryChoices = 6
 
-[node name="BlondeHair" type="Sprite2D" parent="WardrobeShoe/Shoes"]
+[node name="BlondeHair" type="Sprite2D" parent="WardrobeShoe/Shoes" unique_id=1173815745]
 position = Vector2(943, 579)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("23_3ccbu")
 offset = Vector2(0, -830)
 
-[node name="TopS4" type="Button" parent="WardrobeShoe/Shoes"]
+[node name="TopS4" type="Button" parent="WardrobeShoe/Shoes" unique_id=20770111]
 layout_mode = 0
 offset_left = 835.0
-offset_top = 130.0
-offset_right = 1069.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 1068.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
 script = ExtResource("6_devvj")
 Outfit = 3
 Type = "Shoe"
 ActiveDuring = 400
+CategoryChoices = 6
 
-[node name="WardrobeAcc" type="Control" parent="."]
+[node name="BrownHair2" type="Sprite2D" parent="WardrobeShoe/Shoes" unique_id=891704328]
+position = Vector2(439.55908, 1012.39136)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("28_5tfui")
+offset = Vector2(0, -830)
+
+[node name="TopS5" type="Button" parent="WardrobeShoe/Shoes" unique_id=1851456010]
+layout_mode = 0
+offset_left = 325.55908
+offset_top = 589.39136
+offset_right = 559.55896
+offset_bottom = 989.3913
+theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
+script = ExtResource("6_devvj")
+Outfit = 4
+Type = "Shoe"
+ActiveDuring = 400
+CategoryChoices = 6
+
+[node name="BrownHair3" type="Sprite2D" parent="WardrobeShoe/Shoes" unique_id=647454077]
+position = Vector2(696.5591, 1013.39136)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("29_38apo")
+offset = Vector2(0, -830)
+
+[node name="TopS6" type="Button" parent="WardrobeShoe/Shoes" unique_id=1062405129]
+layout_mode = 0
+offset_left = 582.5591
+offset_top = 590.39136
+offset_right = 816.55896
+offset_bottom = 990.3913
+theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
+script = ExtResource("6_devvj")
+Outfit = 5
+Type = "Shoe"
+ActiveDuring = 400
+CategoryChoices = 6
+
+[node name="WardrobeAcc" type="Control" parent="." unique_id=1088935755]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 7300.0
-offset_right = 8418.17
+offset_left = 8400.0
+offset_right = 9518.17
 offset_bottom = 1079.0
 grow_vertical = 2
 
-[node name="TextureHind" type="Sprite2D" parent="WardrobeAcc"]
+[node name="TextureHind" type="Sprite2D" parent="WardrobeAcc" unique_id=1108130669]
 position = Vector2(149.915, 540)
 scale = Vector2(111.4, 108.000015)
 texture = ExtResource("13_c2ibq")
 offset = Vector2(3.65, 0)
 
-[node name="Category" type="RichTextLabel" parent="WardrobeAcc"]
+[node name="Category" type="RichTextLabel" parent="WardrobeAcc" unique_id=1336523491]
 layout_mode = 0
 offset_top = 18.0
 offset_right = 1114.0
@@ -608,82 +777,261 @@ text = "[center]Bling-bling
 
 [left][color=4f6f7f]    Cuffs      [color=ef8faf] Neckla.     [color=bfbfbf]S.Ear    [color=cdcd6f]  G.Ear"
 
-[node name="Accessoar" type="Control" parent="WardrobeAcc"]
+[node name="Accessoar" type="Control" parent="WardrobeAcc" unique_id=1895446319]
 anchors_preset = 0
 offset_right = 1114.0
 offset_bottom = 1080.0
 
-[node name="HairRed" type="Sprite2D" parent="WardrobeAcc/Accessoar"]
+[node name="HairRed" type="Sprite2D" parent="WardrobeAcc/Accessoar" unique_id=706548278]
 position = Vector2(152, 557)
 scale = Vector2(0.485, 0.485)
 texture = ExtResource("24_sph85")
 offset = Vector2(0, -750)
 
-[node name="TopA1" type="Button" parent="WardrobeAcc/Accessoar"]
+[node name="TopA1" type="Button" parent="WardrobeAcc/Accessoar" unique_id=2142564981]
 layout_mode = 0
 offset_left = 50.0
-offset_top = 130.0
-offset_right = 284.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 283.99988
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
 script = ExtResource("6_devvj")
 Type = "Acs"
-ActiveDuring = 500
+ActiveDuring = 600
 
-[node name="CurlyHair" type="Sprite2D" parent="WardrobeAcc/Accessoar"]
+[node name="CurlyHair" type="Sprite2D" parent="WardrobeAcc/Accessoar" unique_id=463020759]
 position = Vector2(431, 568)
 scale = Vector2(0.485, 0.485)
 texture = ExtResource("25_o7g6l")
 offset = Vector2(0, -250)
 
-[node name="TopA2" type="Button" parent="WardrobeAcc/Accessoar"]
+[node name="TopA2" type="Button" parent="WardrobeAcc/Accessoar" unique_id=1029980157]
 layout_mode = 0
 offset_left = 322.00024
-offset_top = 130.0
-offset_right = 556.00024
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 556.0001
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
 script = ExtResource("6_devvj")
 Outfit = 1
 Type = "Acs"
-ActiveDuring = 500
+ActiveDuring = 600
 
-[node name="BrownHair" type="Sprite2D" parent="WardrobeAcc/Accessoar"]
+[node name="BrownHair" type="Sprite2D" parent="WardrobeAcc/Accessoar" unique_id=186217095]
 position = Vector2(697, 573)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("26_vi5kq")
 
-[node name="TopA3" type="Button" parent="WardrobeAcc/Accessoar"]
+[node name="TopA3" type="Button" parent="WardrobeAcc/Accessoar" unique_id=478910309]
 layout_mode = 0
 offset_left = 583.0
-offset_top = 130.0
-offset_right = 817.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 816.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
 script = ExtResource("6_devvj")
 Outfit = 2
 Type = "Acs"
-ActiveDuring = 500
+ActiveDuring = 600
 
-[node name="BlondeHair" type="Sprite2D" parent="WardrobeAcc/Accessoar"]
+[node name="BlondeHair" type="Sprite2D" parent="WardrobeAcc/Accessoar" unique_id=279172387]
 self_modulate = Color(1, 0.8156863, 0.2784314, 1)
 position = Vector2(943, 579)
 scale = Vector2(0.6953889, 0.69538873)
 texture = ExtResource("26_vi5kq")
 
-[node name="TopA4" type="Button" parent="WardrobeAcc/Accessoar"]
+[node name="TopA4" type="Button" parent="WardrobeAcc/Accessoar" unique_id=944890861]
 layout_mode = 0
 offset_left = 835.0
-offset_top = 130.0
-offset_right = 1069.0
-offset_bottom = 594.0
+offset_top = 150.0
+offset_right = 1068.9999
+offset_bottom = 549.99994
 theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
 script = ExtResource("6_devvj")
 Outfit = 3
 Type = "Acs"
-ActiveDuring = 500
+ActiveDuring = 600
 
-[node name="Character" type="AnimatedSprite2D" parent="."]
+[node name="WardrobeChoker" type="Control" parent="." unique_id=250392119]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 7200.0
+offset_right = 8318.172
+offset_bottom = 1079.0
+grow_vertical = 2
+
+[node name="TextureHind" type="Sprite2D" parent="WardrobeChoker" unique_id=448289217]
+position = Vector2(149.915, 540)
+scale = Vector2(111.4, 108.000015)
+texture = ExtResource("13_c2ibq")
+offset = Vector2(3.65, 0)
+
+[node name="Category" type="RichTextLabel" parent="WardrobeChoker" unique_id=115236370]
+layout_mode = 0
+offset_top = 18.0
+offset_right = 1114.0
+offset_bottom = 1029.0
+theme = ExtResource("3_5tuhn")
+theme_override_fonts/normal_font = ExtResource("1_wtcfe")
+bbcode_enabled = true
+text = "[center]Chokers
+
+
+
+
+
+
+
+
+
+[left][color=4f5f6f]     Lace           [color=ef8faf] Cup           [color=8f8f95]Puff    [color=6fafcd]Rosette
+
+
+
+
+
+
+
+
+
+      [color=8f8f95]       Puff  [color=af0f0f]       Beef  [color=af2f7f]      Rose"
+
+[node name="Accessoar" type="Control" parent="WardrobeChoker" unique_id=224326022]
+anchors_preset = 0
+offset_right = 1114.0
+offset_bottom = 1080.0
+
+[node name="HairRed" type="Sprite2D" parent="WardrobeChoker/Accessoar" unique_id=1007310870]
+position = Vector2(152, 850)
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("33_khphd")
+offset = Vector2(0, -750)
+
+[node name="TopC1" type="Button" parent="WardrobeChoker/Accessoar" unique_id=1467131494]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 150.0
+offset_right = 283.99988
+offset_bottom = 549.99994
+theme_override_styles/normal = SubResource("StyleBoxFlat_5tuhn")
+script = ExtResource("6_devvj")
+Type = "Choker"
+ActiveDuring = 500
+CategoryChoices = 7
+
+[node name="CurlyHair" type="Sprite2D" parent="WardrobeChoker/Accessoar" unique_id=1085520605]
+position = Vector2(431, 603.17)
+scale = Vector2(0.485, 0.485)
+texture = ExtResource("34_g4yo4")
+offset = Vector2(0, -250)
+
+[node name="TopC2" type="Button" parent="WardrobeChoker/Accessoar" unique_id=1917029058]
+layout_mode = 0
+offset_left = 322.00024
+offset_top = 150.0
+offset_right = 556.0001
+offset_bottom = 549.99994
+theme_override_styles/normal = SubResource("StyleBoxFlat_2gh4u")
+script = ExtResource("6_devvj")
+Outfit = 1
+Type = "Choker"
+ActiveDuring = 500
+CategoryChoices = 7
+
+[node name="BrownHair" type="Sprite2D" parent="WardrobeChoker/Accessoar" unique_id=1482032685]
+position = Vector2(697, 552.31)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("35_im7ls")
+
+[node name="TopC3" type="Button" parent="WardrobeChoker/Accessoar" unique_id=466411746]
+layout_mode = 0
+offset_left = 583.0
+offset_top = 150.0
+offset_right = 816.9999
+offset_bottom = 549.99994
+theme_override_styles/normal = SubResource("StyleBoxFlat_devvj")
+script = ExtResource("6_devvj")
+Outfit = 2
+Type = "Choker"
+ActiveDuring = 500
+CategoryChoices = 7
+
+[node name="BlondeHair" type="Sprite2D" parent="WardrobeChoker/Accessoar" unique_id=1996137483]
+position = Vector2(943, 535.01)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("36_a34eg")
+
+[node name="TopC4" type="Button" parent="WardrobeChoker/Accessoar" unique_id=514079472]
+layout_mode = 0
+offset_left = 835.0
+offset_top = 150.0
+offset_right = 1068.9999
+offset_bottom = 549.99994
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 3
+Type = "Choker"
+ActiveDuring = 500
+CategoryChoices = 7
+
+[node name="RaveHair" type="Sprite2D" parent="WardrobeChoker/Accessoar" unique_id=1094944592]
+position = Vector2(300, 998.27)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("37_via5u")
+
+[node name="TopC5" type="Button" parent="WardrobeChoker/Accessoar" unique_id=489257157]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 591.0
+offset_right = 420.99988
+offset_bottom = 990.99994
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 4
+Type = "Choker"
+ActiveDuring = 500
+CategoryChoices = 7
+
+[node name="LextraHair" type="Sprite2D" parent="WardrobeChoker/Accessoar" unique_id=1024926431]
+position = Vector2(563.559, 985.349)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("38_ac6pf")
+
+[node name="TopC6" type="Button" parent="WardrobeChoker/Accessoar" unique_id=815674332]
+layout_mode = 0
+offset_left = 450.55908
+offset_top = 593.21875
+offset_right = 684.55896
+offset_bottom = 993.2187
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 5
+Type = "Choker"
+ActiveDuring = 500
+CategoryChoices = 7
+
+[node name="ExtraHair" type="Sprite2D" parent="WardrobeChoker/Accessoar" unique_id=1357534685]
+position = Vector2(831.559, 970.139)
+scale = Vector2(0.6953889, 0.69538873)
+texture = ExtResource("39_ek63v")
+
+[node name="TopC7" type="Button" parent="WardrobeChoker/Accessoar" unique_id=2031003040]
+layout_mode = 0
+offset_left = 718.5591
+offset_top = 591.21875
+offset_right = 952.55896
+offset_bottom = 991.2187
+theme_override_styles/normal = SubResource("StyleBoxFlat_3b0ty")
+script = ExtResource("6_devvj")
+Outfit = 6
+Type = "Choker"
+ActiveDuring = 500
+CategoryChoices = 7
+
+[node name="Character" type="AnimatedSprite2D" parent="." unique_id=248266673]
 position = Vector2(970, 565.99994)
 scale = Vector2(0.6953889, 0.69538873)
 sprite_frames = SubResource("SpriteFrames_r0du0")
@@ -691,96 +1039,147 @@ animation = &"Bases"
 frame_progress = 1.0
 script = ExtResource("4_trn2v")
 
-[node name="White" type="Sprite2D" parent="Character"]
+[node name="White" type="Sprite2D" parent="Character" unique_id=217565154]
 visible = false
 texture = ExtResource("5_2gh4u")
 
-[node name="Brown" type="Sprite2D" parent="Character"]
+[node name="Brown" type="Sprite2D" parent="Character" unique_id=32134042]
 visible = false
 texture = ExtResource("7_3b0ty")
 
-[node name="Black" type="Sprite2D" parent="Character"]
+[node name="Black" type="Sprite2D" parent="Character" unique_id=554791822]
 visible = false
 texture = ExtResource("8_bg4s2")
 
-[node name="Red" type="Sprite2D" parent="Character"]
+[node name="Red" type="Sprite2D" parent="Character" unique_id=1122377801]
 visible = false
 texture = ExtResource("9_hhcpw")
 
-[node name="Top1" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("16_bg4s2")
-
-[node name="Top2" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("17_hhcpw")
-
-[node name="Top3" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("18_mxvw5")
-
-[node name="Top4" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("19_xrxkg")
-
-[node name="Pants2" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("17_40n85")
-
-[node name="Pants" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("16_oye8v")
-
-[node name="Skirt" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("18_gb15f")
-
-[node name="Skirt2" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("19_sph85")
-
-[node name="S1" type="Sprite2D" parent="Character"]
+[node name="S1" type="Sprite2D" parent="Character" unique_id=522390292]
 visible = false
 texture = ExtResource("20_o7g6l")
 
-[node name="S2" type="Sprite2D" parent="Character"]
+[node name="S2" type="Sprite2D" parent="Character" unique_id=1940255590]
 visible = false
 texture = ExtResource("21_vi5kq")
 
-[node name="S3" type="Sprite2D" parent="Character"]
+[node name="S3" type="Sprite2D" parent="Character" unique_id=59781200]
 visible = false
 texture = ExtResource("22_5mkgo")
 
-[node name="S4" type="Sprite2D" parent="Character"]
+[node name="S4" type="Sprite2D" parent="Character" unique_id=1038082017]
 visible = false
 texture = ExtResource("23_3ccbu")
 
-[node name="A1" type="Sprite2D" parent="Character"]
+[node name="S5" type="Sprite2D" parent="Character" unique_id=678177703]
+visible = false
+texture = ExtResource("28_5tfui")
+
+[node name="S6" type="Sprite2D" parent="Character" unique_id=1128880097]
+visible = false
+texture = ExtResource("29_38apo")
+
+[node name="Top1" type="Sprite2D" parent="Character" unique_id=118332966]
+visible = false
+texture = ExtResource("16_bg4s2")
+
+[node name="Top2" type="Sprite2D" parent="Character" unique_id=322380850]
+visible = false
+texture = ExtResource("17_hhcpw")
+
+[node name="Top3" type="Sprite2D" parent="Character" unique_id=1596216437]
+visible = false
+texture = ExtResource("18_mxvw5")
+
+[node name="Top4" type="Sprite2D" parent="Character" unique_id=1130905732]
+visible = false
+texture = ExtResource("19_xrxkg")
+
+[node name="Top5" type="Sprite2D" parent="Character" unique_id=857913130]
+visible = false
+texture = ExtResource("16_f4ese")
+
+[node name="Top6" type="Sprite2D" parent="Character" unique_id=2010010701]
+visible = false
+texture = ExtResource("17_rchyr")
+
+[node name="C1" type="Sprite2D" parent="Character" unique_id=1550293548]
+visible = false
+texture = ExtResource("33_khphd")
+
+[node name="C2" type="Sprite2D" parent="Character" unique_id=1637820401]
+visible = false
+texture = ExtResource("34_g4yo4")
+
+[node name="C3" type="Sprite2D" parent="Character" unique_id=1449786773]
+visible = false
+texture = ExtResource("35_im7ls")
+
+[node name="C4" type="Sprite2D" parent="Character" unique_id=1907398996]
+visible = false
+texture = ExtResource("36_a34eg")
+
+[node name="C5" type="Sprite2D" parent="Character" unique_id=1359364415]
+visible = false
+texture = ExtResource("37_via5u")
+
+[node name="C6" type="Sprite2D" parent="Character" unique_id=790717586]
+visible = false
+texture = ExtResource("38_ac6pf")
+
+[node name="C7" type="Sprite2D" parent="Character" unique_id=866452283]
+visible = false
+texture = ExtResource("39_ek63v")
+
+[node name="A1" type="Sprite2D" parent="Character" unique_id=2145358101]
 visible = false
 texture = ExtResource("24_sph85")
 
-[node name="A2" type="Sprite2D" parent="Character"]
+[node name="A2" type="Sprite2D" parent="Character" unique_id=893729351]
 visible = false
 texture = ExtResource("25_o7g6l")
 
-[node name="A3" type="Sprite2D" parent="Character"]
+[node name="A3" type="Sprite2D" parent="Character" unique_id=504781356]
 visible = false
 texture = ExtResource("26_vi5kq")
 
-[node name="A4" type="Sprite2D" parent="Character"]
+[node name="A4" type="Sprite2D" parent="Character" unique_id=257258589]
 visible = false
 self_modulate = Color(1, 0.73333335, 0.29411766, 1)
 texture = ExtResource("26_vi5kq")
 
-[node name="TextHandler" type="Control" parent="."]
+[node name="Pants2" type="Sprite2D" parent="Character" unique_id=1427998811]
+visible = false
+texture = ExtResource("17_40n85")
+
+[node name="Pants" type="Sprite2D" parent="Character" unique_id=850864834]
+visible = false
+texture = ExtResource("16_oye8v")
+
+[node name="Skirt" type="Sprite2D" parent="Character" unique_id=320965]
+visible = false
+texture = ExtResource("18_gb15f")
+
+[node name="Skirt2" type="Sprite2D" parent="Character" unique_id=676684331]
+visible = false
+texture = ExtResource("19_sph85")
+
+[node name="Kjol" type="Sprite2D" parent="Character" unique_id=92256207]
+visible = false
+texture = ExtResource("22_pljue")
+
+[node name="HTPants" type="Sprite2D" parent="Character" unique_id=2011747032]
+visible = false
+texture = ExtResource("23_nx4yo")
+
+[node name="TextHandler" type="Control" parent="." unique_id=1529354478]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 script = ExtResource("1_epypp")
-metadata/_edit_lock_ = true
 
-[node name="Dialogue" type="Control" parent="TextHandler"]
+[node name="Dialogue" type="Control" parent="TextHandler" unique_id=1111144123]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -793,7 +1192,7 @@ offset_right = 576.5
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="TextBox" type="RichTextLabel" parent="TextHandler/Dialogue"]
+[node name="TextBox" type="RichTextLabel" parent="TextHandler/Dialogue" unique_id=937482883]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -810,7 +1209,8 @@ bbcode_enabled = true
 horizontal_alignment = 1
 custom_effects = [SubResource("RichTextEffect_q6r6c")]
 
-[node name="NextChar" type="RichTextLabel" parent="TextHandler/Dialogue"]
+[node name="NextChar" type="RichTextLabel" parent="TextHandler/Dialogue" unique_id=2034957530]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -827,8 +1227,10 @@ text = "[bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55][D]
 horizontal_alignment = 1
 custom_effects = [SubResource("RichTextEffect_q6r6c")]
 script = ExtResource("8_wkp8b")
+Type = "Right"
 
-[node name="PrevChar" type="RichTextLabel" parent="TextHandler/Dialogue"]
+[node name="PrevChar" type="RichTextLabel" parent="TextHandler/Dialogue" unique_id=164060173]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -845,8 +1247,9 @@ text = "[bgcolor=9f4178][center][color=#ffffff][blinky speed=4 minimums=0.55]< [
 horizontal_alignment = 1
 custom_effects = [SubResource("RichTextEffect_q6r6c")]
 script = ExtResource("8_wkp8b")
+Type = "Left"
 
-[node name="Space" type="RichTextLabel" parent="TextHandler/Dialogue"]
+[node name="Space" type="RichTextLabel" parent="TextHandler/Dialogue" unique_id=2084808463]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -890,6 +1293,12 @@ script = ExtResource("9_wkp8b")
 [connection signal="WornOutfit" from="WardrobeTops/Tops/TopB4" to="Character" method="_on_button_worn_outfit"]
 [connection signal="button_down" from="WardrobeTops/Tops/TopB4" to="WardrobeTops/Tops/TopB4" method="_on_button_down"]
 [connection signal="pressed" from="WardrobeTops/Tops/TopB4" to="WardrobeTops/Tops/TopB4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeTops/Tops/TopB5" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeTops/Tops/TopB5" to="WardrobeTops/Tops/TopB5" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeTops/Tops/TopB5" to="WardrobeTops/Tops/TopB5" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeTops/Tops/TopB6" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeTops/Tops/TopB6" to="WardrobeTops/Tops/TopB6" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeTops/Tops/TopB6" to="WardrobeTops/Tops/TopB6" method="_on_pressed"]
 [connection signal="WornOutfit" from="WardrobePant/Pants/TopP1" to="Character" method="_on_button_worn_outfit"]
 [connection signal="button_down" from="WardrobePant/Pants/TopP1" to="WardrobePant/Pants/TopP1" method="_on_pressed"]
 [connection signal="pressed" from="WardrobePant/Pants/TopP1" to="WardrobePant/Pants/TopP1" method="_on_pressed"]
@@ -902,6 +1311,12 @@ script = ExtResource("9_wkp8b")
 [connection signal="WornOutfit" from="WardrobePant/Pants/TopP4" to="Character" method="_on_button_worn_outfit"]
 [connection signal="button_down" from="WardrobePant/Pants/TopP4" to="WardrobePant/Pants/TopP4" method="_on_button_down"]
 [connection signal="pressed" from="WardrobePant/Pants/TopP4" to="WardrobePant/Pants/TopP4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobePant/Pants/TopP5" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobePant/Pants/TopP5" to="WardrobePant/Pants/TopP5" method="_on_button_down"]
+[connection signal="pressed" from="WardrobePant/Pants/TopP5" to="WardrobePant/Pants/TopP5" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobePant/Pants/TopP6" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobePant/Pants/TopP6" to="WardrobePant/Pants/TopP6" method="_on_button_down"]
+[connection signal="pressed" from="WardrobePant/Pants/TopP6" to="WardrobePant/Pants/TopP6" method="_on_pressed"]
 [connection signal="WornOutfit" from="WardrobeShoe/Shoes/TopS1" to="Character" method="_on_button_worn_outfit"]
 [connection signal="button_down" from="WardrobeShoe/Shoes/TopS1" to="WardrobeShoe/Shoes/TopS1" method="_on_pressed"]
 [connection signal="pressed" from="WardrobeShoe/Shoes/TopS1" to="WardrobeShoe/Shoes/TopS1" method="_on_pressed"]
@@ -914,6 +1329,12 @@ script = ExtResource("9_wkp8b")
 [connection signal="WornOutfit" from="WardrobeShoe/Shoes/TopS4" to="Character" method="_on_button_worn_outfit"]
 [connection signal="button_down" from="WardrobeShoe/Shoes/TopS4" to="WardrobeShoe/Shoes/TopS4" method="_on_button_down"]
 [connection signal="pressed" from="WardrobeShoe/Shoes/TopS4" to="WardrobeShoe/Shoes/TopS4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeShoe/Shoes/TopS5" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeShoe/Shoes/TopS5" to="WardrobeShoe/Shoes/TopS5" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeShoe/Shoes/TopS5" to="WardrobeShoe/Shoes/TopS5" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeShoe/Shoes/TopS6" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeShoe/Shoes/TopS6" to="WardrobeShoe/Shoes/TopS6" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeShoe/Shoes/TopS6" to="WardrobeShoe/Shoes/TopS6" method="_on_pressed"]
 [connection signal="WornOutfit" from="WardrobeAcc/Accessoar/TopA1" to="Character" method="_on_button_worn_outfit"]
 [connection signal="button_down" from="WardrobeAcc/Accessoar/TopA1" to="WardrobeAcc/Accessoar/TopA1" method="_on_pressed"]
 [connection signal="pressed" from="WardrobeAcc/Accessoar/TopA1" to="WardrobeAcc/Accessoar/TopA1" method="_on_pressed"]
@@ -926,6 +1347,27 @@ script = ExtResource("9_wkp8b")
 [connection signal="WornOutfit" from="WardrobeAcc/Accessoar/TopA4" to="Character" method="_on_button_worn_outfit"]
 [connection signal="button_down" from="WardrobeAcc/Accessoar/TopA4" to="WardrobeAcc/Accessoar/TopA4" method="_on_button_down"]
 [connection signal="pressed" from="WardrobeAcc/Accessoar/TopA4" to="WardrobeAcc/Accessoar/TopA4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeChoker/Accessoar/TopC1" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeChoker/Accessoar/TopC1" to="WardrobeChoker/Accessoar/TopC1" method="_on_pressed"]
+[connection signal="pressed" from="WardrobeChoker/Accessoar/TopC1" to="WardrobeChoker/Accessoar/TopC1" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeChoker/Accessoar/TopC2" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeChoker/Accessoar/TopC2" to="WardrobeChoker/Accessoar/TopC2" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeChoker/Accessoar/TopC2" to="WardrobeChoker/Accessoar/TopC2" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeChoker/Accessoar/TopC3" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeChoker/Accessoar/TopC3" to="WardrobeChoker/Accessoar/TopC3" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeChoker/Accessoar/TopC3" to="WardrobeChoker/Accessoar/TopC3" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeChoker/Accessoar/TopC4" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeChoker/Accessoar/TopC4" to="WardrobeChoker/Accessoar/TopC4" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeChoker/Accessoar/TopC4" to="WardrobeChoker/Accessoar/TopC4" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeChoker/Accessoar/TopC5" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeChoker/Accessoar/TopC5" to="WardrobeChoker/Accessoar/TopC5" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeChoker/Accessoar/TopC5" to="WardrobeChoker/Accessoar/TopC5" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeChoker/Accessoar/TopC6" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeChoker/Accessoar/TopC6" to="WardrobeChoker/Accessoar/TopC6" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeChoker/Accessoar/TopC6" to="WardrobeChoker/Accessoar/TopC6" method="_on_pressed"]
+[connection signal="WornOutfit" from="WardrobeChoker/Accessoar/TopC7" to="Character" method="_on_button_worn_outfit"]
+[connection signal="button_down" from="WardrobeChoker/Accessoar/TopC7" to="WardrobeChoker/Accessoar/TopC7" method="_on_button_down"]
+[connection signal="pressed" from="WardrobeChoker/Accessoar/TopC7" to="WardrobeChoker/Accessoar/TopC7" method="_on_pressed"]
 [connection signal="DialogueRequest" from="Character" to="TextHandler" method="_on_character_dialogue_request"]
 [connection signal="GamestateNotif" from="Character" to="Wardrobe/Hairs/Button" method="_on_character_gamestate_notif"]
 [connection signal="GamestateNotif" from="Character" to="Wardrobe/Hairs/Button2" method="_on_character_gamestate_notif"]
@@ -947,8 +1389,23 @@ script = ExtResource("9_wkp8b")
 [connection signal="GamestateNotif" from="Character" to="WardrobeAcc/Accessoar/TopA2" method="_on_character_gamestate_notif"]
 [connection signal="GamestateNotif" from="Character" to="WardrobeAcc/Accessoar/TopA3" method="_on_character_gamestate_notif"]
 [connection signal="GamestateNotif" from="Character" to="WardrobeAcc/Accessoar/TopA4" method="_on_character_gamestate_notif"]
-[connection signal="InitializeDialogue" from="Character" to="TextHandler" method="_onCharConfirmation"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeChoker/Accessoar/TopC1" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeChoker/Accessoar/TopC2" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeChoker/Accessoar/TopC3" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeChoker/Accessoar/TopC4" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeChoker/Accessoar/TopC5" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeChoker/Accessoar/TopC7" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeChoker/Accessoar/TopC6" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeTops/Tops/TopB5" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeTops/Tops/TopB6" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobePant/Pants/TopP5" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobePant/Pants/TopP6" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeShoe/Shoes/TopS5" method="_on_character_gamestate_notif"]
+[connection signal="GamestateNotif" from="Character" to="WardrobeShoe/Shoes/TopS6" method="_on_character_gamestate_notif"]
 [connection signal="InitializeDialogue" from="Character" to="Title" method="_on_character_initialize_dialogue"]
+[connection signal="InitializeDialogue" from="Character" to="TextHandler" method="_onCharConfirmation"]
 [connection signal="CharacterHasBeenConfirmed" from="TextHandler" to="TextHandler/Dialogue/NextChar" method="_on_text_handler_character_has_been_confirmed"]
 [connection signal="CharacterHasBeenConfirmed" from="TextHandler" to="TextHandler/Dialogue/PrevChar" method="_on_text_handler_character_has_been_confirmed"]
+[connection signal="DialogueOptions" from="TextHandler" to="TextHandler/Dialogue/NextChar" method="_on_text_handler_dialogue_options"]
+[connection signal="DialogueOptions" from="TextHandler" to="TextHandler/Dialogue/PrevChar" method="_on_text_handler_dialogue_options"]
 [connection signal="FinishedDialogueBlock" from="TextHandler" to="Character" method="_on_text_handler_finished_dialogue_block"]

@@ -21,14 +21,36 @@
 	
 	"DressupEnd": {
 		"A": ["[bgcolor=9f4178][center][color=#ffffff]Thank ", "You!"],
-		
+		"B": ["[bgcolor=9f4178][center][color=#ffffff]I ", "genu", "inely ","look ", "soooo ", "fa", "bu", "lous", "~!"],
+		"C": ["[bgcolor=9f4178][center][color=#ffffff]I ", "could", "n't ","have ", "done ", "this ", "with", "out ", "you, ", "I ", "don't ", "think", "!"],
+		"D": ["[bgcolor=9f4178][center][color=#ffffff].", ".", "."],
+		"E": ["[bgcolor=9f4178][center][color=#ffffff]You ", "know", "... ", "You", "'re ", "so ", "much ", "better ", "than ", "me", "."],
+		"F": ["[bgcolor=9f4178][center][color=#ffffff]If- "],
+		"G": ["[bgcolor=9f4178][center][color=#ffffff]If- ", "you ", "are ", "able ", "to", "..."],
+		"H": ["[bgcolor=9f4178][center][color=#ffffff]If ", "I ", "were ", "to ", "need ", "some ", "help ", "resty", "ling ", "my", "self ", "out"],
+		"I": ["[bgcolor=9f4178][center][color=#ffffff]Would ", "you ", "mind ", "helping ", "me", "?"],
 		"Description": "Triggered after getting off the car (At the start of the game)",
-		"Items": 1
+		"Items": 9
+	},
+	
+	"DressupEndAfterNo": {
+		"A": ["[bgcolor=9f4178][center][color=#ffffff]Aww", ".", ".", "."],
+		"B": ["[bgcolor=9f4178][center][color=#ffffff]I ", "un", "der", "stand", "."],
+		"C": ["[bgcolor=9f4178][center][color=#ffffff]Well", "... ", "I ", "am ", "still ", "in ", "debt ", "to ", "you ", "for ", "this", "."],
+		"D": ["[bgcolor=9f4178][center][color=#ffffff]Let ", "me ", "get ", "you ", "some", "thing ", "for ", "the ", "effort!"],
+		"E": ["[bgcolor=9f4178][center][color=#ffffff]Do ", "you ", "like ", "apple ", "pie", "?"],
+		"Description": "Triggered after answering No at the game end",
+		"Items": 5
+	},
+	"DressupEndAfterYes": {
+		"A": ["[bgcolor=9f4178][center][color=#ffffff]Oh ", "my ", "gods, ", "ye", "ee", "ee", "s", "~!"],
+		"B": ["[bgcolor=9f4178][center][color=#ffffff]You ", "are ", "a ", "true ", "saint", "!"],
+		"C": ["[bgcolor=9f4178][center][color=#ffffff]I ", "am ", "truly ", "in ", "debt ", "to ", "you ", "for ", "this", "!"],
+		"D": ["[bgcolor=9f4178][center][color=#ffffff]Uh-", "let ", "me ", "get ", "you ", "some", "thing ", "for ", "the ", "trouble!"],
+		"E": ["[bgcolor=9f4178][center][color=#ffffff]Do ", "you ", "like ", "pine", "apple ", "pie", "?"],
+		"Description": "Triggered after answering Yes at the game end",
+		"Items": 3
 	}
-	
-	
-	
-	
 	
 	
 	
